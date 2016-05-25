@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{8f0bcf5d-f6b2-47de-8a33-ab3916e2f2f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Pudge">
+      <UniqueIdentifier>{4e2ffcf9-2df5-473e-92da-85b03021d9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Mesh Effects">
+      <UniqueIdentifier>{50a24efc-8622-437e-b76f-00ddc877c094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Lil goo">
+      <UniqueIdentifier>{adfed5bb-eab8-438e-8a37-4e7de803a8a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Slime monster">
+      <UniqueIdentifier>{ac39bdfd-cf10-4972-86df-be64dec1061b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Junk Hunk">
+      <UniqueIdentifier>{4ffd233f-8677-476d-bf94-5563b71c9616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Vacuum">
+      <UniqueIdentifier>{bac47486-c2cb-4cc6-94ad-2c5105c462bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Hazards">
+      <UniqueIdentifier>{4ccbb95b-aa95-4eae-882c-3549ef190b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Background">
+      <UniqueIdentifier>{fbe679af-4b82-4735-b36f-2f2ab472256a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Sludge">
+      <UniqueIdentifier>{3ea05d00-2134-4c52-bed3-0bdb3828beb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\SludgesShip">
+      <UniqueIdentifier>{bfa8f7eb-4d74-4dd9-a579-ca3648c368de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationBlender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationStateMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BigHurtEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ImpactEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="LandEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PushEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PushEffectIdleState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PullEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PullEffectPullForeverState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PullEffectIdleState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeFallingState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeIdleState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeIdleToJumpState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeIdleToPullState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeIdleToRunState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeJumpState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeJumpToFallingState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgePullState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgePushState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeRunState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeRunToIdleState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeWallJumpState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeWallSlideState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="VacuumArmIdleState.cpp">
+      <Filter>States\Vacuum</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpIdleEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="LandIdleEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="LittleHurtEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeSmallDamageState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeBigDamageState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeMonsterIdleState.cpp">
+      <Filter>States\Slime monster</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeMonsterThrowAttackState.cpp">
+      <Filter>States\Slime monster</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeMonsterWalkState.cpp">
+      <Filter>States\Slime monster</Filter>
+    </ClCompile>
+    <ClCompile Include="BigHurtIdleEffectState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeMonsterSneakAttackState.cpp">
+      <Filter>States\Slime monster</Filter>
+    </ClCompile>
+    <ClCompile Include="LilGooWalkState.cpp">
+      <Filter>States\Lil goo</Filter>
+    </ClCompile>
+    <ClCompile Include="LilGooAttackState.cpp">
+      <Filter>States\Lil goo</Filter>
+    </ClCompile>
+    <ClCompile Include="LilGooFlyingState.cpp">
+      <Filter>States\Lil goo</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeDeathByGooState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeDeathByCrusherState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BridgeHalfRetractState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="BridgeIdleState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="DoorOpenState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="DoorIdleState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeMonsterStunState.cpp">
+      <Filter>States\Slime monster</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeMonsterDeathState.cpp">
+      <Filter>States\Slime monster</Filter>
+    </ClCompile>
+    <ClCompile Include="BridgeHalfRetractIdleState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="DoorOpenIdleState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathCloudPudgeDeathState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="PudgeBackPeddleState.cpp">
+      <Filter>States\Pudge</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionMeshSpawnState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionMeshRotatingState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonIdleState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonClosingState.cpp">
+      <Filter>States\Hazards</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnPipeDripState.cpp">
+      <Filter>States\Mesh Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimBoxesState.cpp">
+      <Filter>States\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimBeltState.cpp">
+      <Filter>States\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimClawState.cpp">
+      <Filter>States\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimFanState.cpp">
+      <Filter>States\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgeIdleState.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipIdleState.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgePullLeverDownState.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipPullLeverDownState.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgeSpinAttackState.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipSpinAttackState.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+    <ClCompile Include="SlimeMonsterHideState.cpp">
+      <Filter>States\Slime monster</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgeStartCrusherAttack.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipStartCrusherAttack.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgeFallCrusherAttack.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipFallCrusherAttack.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgeLandCrusherAttack.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipLandCrusherAttack.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgeSteamAttack.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipSteamAttack.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimCrateClawState.cpp">
+      <Filter>States\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationSystem.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimBossState.cpp">
+      <Filter>States\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgeFlyAway.cpp">
+      <Filter>States\Sludge</Filter>
+    </ClCompile>
+    <ClCompile Include="SludgesShipIdleDamage.cpp">
+      <Filter>States\SludgesShip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationBlender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationStateMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationIncludes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BigHurtEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="ImpactEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="LandEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PushEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PushEffectIdleState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PullEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PullEffectPullForeverState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PullEffectIdleState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeWallSlideState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeFallingState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeIdleState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeIdleToJumpState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeIdleToPullState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeIdleToRunState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeJumpState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeJumpToFallingState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgePullState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgePushState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeRunState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeRunToIdleState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeWallJumpState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="VacuumArmIdleState.h">
+      <Filter>States\Vacuum</Filter>
+    </ClInclude>
+    <ClInclude Include="JumpIdleEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="LandIdleEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="LittleHurtEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeSmallDamageState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeBigDamageState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeMonsterIdleState.h">
+      <Filter>States\Slime monster</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeMonsterThrowAttackState.h">
+      <Filter>States\Slime monster</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeMonsterWalkState.h">
+      <Filter>States\Slime monster</Filter>
+    </ClInclude>
+    <ClInclude Include="BigHurtIdleEffectState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeMonsterSneakAttackState.h">
+      <Filter>States\Slime monster</Filter>
+    </ClInclude>
+    <ClInclude Include="LilGooWalkState.h">
+      <Filter>States\Lil goo</Filter>
+    </ClInclude>
+    <ClInclude Include="LilGooAttackState.h">
+      <Filter>States\Lil goo</Filter>
+    </ClInclude>
+    <ClInclude Include="LilGooFlyingState.h">
+      <Filter>States\Lil goo</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeDeathByGooState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeDeathByCrusherState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="BridgeHalfRetractState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="BridgeIdleState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="DoorOpenState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="DoorIdleState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeMonsterStunState.h">
+      <Filter>States\Slime monster</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeMonsterDeathState.h">
+      <Filter>States\Slime monster</Filter>
+    </ClInclude>
+    <ClInclude Include="BridgeHalfRetractIdleState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="DoorOpenIdleState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathCloudPudgeDeathState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="PudgeBackPeddleState.h">
+      <Filter>States\Pudge</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionMeshSpawnState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionMeshRotatingState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonIdleState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonClosingState.h">
+      <Filter>States\Hazards</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnPipeDripState.h">
+      <Filter>States\Mesh Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimBoxesState.h">
+      <Filter>States\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimBeltState.h">
+      <Filter>States\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimClawState.h">
+      <Filter>States\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimFanState.h">
+      <Filter>States\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgeIdleState.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipIdleState.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgePullLeverDownState.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipPullLeverDownState.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgeSpinAttackState.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipSpinAttackState.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+    <ClInclude Include="SlimeMonsterHideState.h">
+      <Filter>States\Slime monster</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgeStartCrusherAttack.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipStartCrusherAttack.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgeFallCrusherAttack.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipFallCrusherAttack.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgeLandCrusherAttack.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipLandCrusherAttack.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgeSteamAttack.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipSteamAttack.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimCrateClawState.h">
+      <Filter>States\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimBossState.h">
+      <Filter>States\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgeFlyAway.h">
+      <Filter>States\Sludge</Filter>
+    </ClInclude>
+    <ClInclude Include="SludgesShipIdleDamage.h">
+      <Filter>States\SludgesShip</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

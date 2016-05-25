@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<emitter>
+    <fileTextureName value="SteamPipeParticle.png" />
+    <type value="1" />
+    <rate value="259.868408" />
+    <minDistance value="0.000000" />
+    <maxDistance value="106.680000" />
+    <spread value="0.000000" />
+    <speed value="60.157894" />
+    <speedRandom value="40.000000" />
+    <maxCount value="-1" />
+    <lifespan value="0.600000" />
+    <lifespanRandom value="0.500000" />
+    <direction X="1.000000" Y="1.000000" Z="0.000000" />
+    <particleRenderType value="5" />
+    <spriteNum value="1" />
+    <spriteScaleX value="30.000000" />
+    <spriteScaleY value="30.000000" />
+    <spriteTwist value="0.000000" />
+    <alphaRamp value="UfoExplosion_Fire_OpacityRamp.png" />
+    <colorRamp value="UfoExplosion_Fire_ColorRamp.png" />
+    <scaleRamp value="UfoExplosion_Fire_ScaleRamp.png" />
+    <rotationRamp value="default.png" />
+    <arrayMapper5 min="0.000000" max="1.000000" />
+    <ScaleX min="30.000000" max="60.000000" />
+    <arrayMapper7 min="30.000000" max="60.000000" />
+    <arrayMapper8 min="0.000000" max="1.000000" />
+    <gravity X="0.000000" Y="0.000000" Z="0.000000" />
+</emitter>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Object Manager">
+      <UniqueIdentifier>{9add0464-b09a-4a1c-834b-4ff7159bb38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{6941d424-24a1-4416-9190-a972e9a364f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Factory">
+      <UniqueIdentifier>{c194d4c2-ceeb-460a-b876-0cddc841735f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Objects\IBaseObject.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Object Factory\CObjectFactory.h">
+      <Filter>Object Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager\CObjectManager.h">
+      <Filter>Object Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Objects\IBaseObject.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager\CObjectManager.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Object Factory\CObjectFactory.cpp">
+      <Filter>Object Factory</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

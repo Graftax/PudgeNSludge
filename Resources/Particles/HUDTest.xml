@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<emitter>
+    <fileTextureName value="WallDustParticle.png" />
+    <type value="0" />
+    <rate value="31.578949" />
+    <minDistance value="0.000000" />
+    <maxDistance value="8.092105" />
+    <spread value="0.256579" />
+    <speed value="300.684212" />
+    <speedRandom value="0.000000" />
+    <maxCount value="-1" />
+    <lifespan value="1.000000" />
+    <lifespanRandom value="0.200000" />
+    <direction X="0.000000" Y="1.000000" Z="-1.000000" />
+    <particleRenderType value="5" />
+    <spriteNum value="1" />
+    <spriteScaleX value="20.000000" />
+    <spriteScaleY value="20.000000" />
+    <spriteTwist value="0.000000" />
+    <ScaleX min="1.000000" max="20.000000" />
+    <alphaRamp value="RunSmoke_OpacityRamp.png" />
+    <colorRamp value="fireRamp.png" />
+    <scaleRamp value="RunSmoke_ScaleRamp.png" />
+    <screenSpace value="1.000000" />
+</emitter>

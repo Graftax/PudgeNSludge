@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<emitter>
+    <fileTextureName value="Sparkle.png" />
+    <type value="2" />
+    <rate value="101.973686" />
+    <minDistance value="0.000000" />
+    <maxDistance value="91.440002" />
+    <spread value="0.000000" />
+    <speed value="0.000000" />
+    <speedRandom value="0.000000" />
+    <maxCount value="-1" />
+    <lifespan value="0.500000" />
+    <lifespanRandom value="0.000000" />
+    <direction X="1.000000" Y="0.000000" Z="0.000000" />
+    <particleRenderType value="5" />
+    <spriteNum value="1" />
+    <spriteScaleX value="30.000000" />
+    <spriteScaleY value="30.000000" />
+    <spriteTwist value="0.000000" />
+    <alphaRamp value="FloorSplash_OpacityRamp.png" />
+    <colorRamp value="FloorSplash_ColorRamp.png" />
+    <scaleRamp value="FloorSplash_ScaleRamp.png" />
+    <rotationRamp value="default.png" />
+    <arrayMapper1 min="0.000000" max="1.000000" />
+    <arrayMapper2 min="0.000000" max="1.000000" />
+    <ScaleX min="0.000000" max="10.000000" />
+    <arrayMapper4 min="0.000000" max="5.000000" />
+    <gravity X="0.000000" Y="0.000000" Z="0.000000" />
+    <halfExtent X="500.000000" Y="5.000000" Z="40.000000" />
+</emitter>

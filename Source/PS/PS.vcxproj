@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C29E8138-9F3F-4317-BE2C-966C6BA85FEC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dinput8.lib;dxguid.lib;xinput.lib;dbghelp.lib;../Debug/AI.lib;../Debug/AudioLib.lib;../Debug/Camera.lib;../Debug/EffectsLib.lib;../Debug/HUD.lib;../Debug/InputLib.lib;../Debug/ObjectLib.lib;../Debug/RenderEngine.lib;../Debug/Utilities.lib;../Debug/ComponentManager.lib;../Debug/PhysicsEnvironment.lib;../Debug/AnimationLib.lib;../Debug/LevelManager.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(TargetPath)" "$(SolutionDir)..\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dinput8.lib;dxguid.lib;xinput.lib;dbghelp.lib;../Release/AI.lib;../Release/AudioLib.lib;../Release/Camera.lib;../Release/EffectsLib.lib;../Release/HUD.lib;../Release/InputLib.lib;../Release/ObjectLib.lib;../Release/RenderEngine.lib;../Release/Utilities.lib;../Release/ComponentManager.lib;../Release/PhysicsEnvironment.lib;../Release/AnimationLib.lib;../Release/LevelManager.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(TargetPath)" "$(SolutionDir)..\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CGame.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="States\CAudioOptionsState.cpp" />
+    <ClCompile Include="States\CCreditsState.cpp" />
+    <ClCompile Include="States\CEndGameState.cpp" />
+    <ClCompile Include="States\CHelpState.cpp" />
+    <ClCompile Include="States\CLoadingState.cpp" />
+    <ClCompile Include="States\COptionsState.cpp" />
+    <ClCompile Include="States\CPauseState.cpp" />
+    <ClCompile Include="States\CSplashScreenState.cpp" />
+    <ClCompile Include="States\CVideoOptionsState.cpp" />
+    <ClCompile Include="States\CWinGameState.cpp" />
+    <ClCompile Include="States\GamePlayState.cpp" />
+    <ClCompile Include="States\MainMenuState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGame.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="States\CAudioOptionsStates.h" />
+    <ClInclude Include="States\CCreditsState.h" />
+    <ClInclude Include="States\CEndGameState.h" />
+    <ClInclude Include="States\CHelpState.h" />
+    <ClInclude Include="States\CLoadingState.h" />
+    <ClInclude Include="States\COptionsState.h" />
+    <ClInclude Include="States\CPauseState.h" />
+    <ClInclude Include="States\CSplashScreenState.h" />
+    <ClInclude Include="States\CVideoOptionsState.h" />
+    <ClInclude Include="States\CWinGameState.h" />
+    <ClInclude Include="States\GamePlayState.h" />
+    <ClInclude Include="States\IGameState.h" />
+    <ClInclude Include="States\MainMenuState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Icon.ico" />
+    <None Include="Icon.ico" />
+    <None Include="My Amplifier Results\r005hs\r005hs.ampl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PS.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

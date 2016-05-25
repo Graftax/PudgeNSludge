@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A8A6373C-9759-4DB7-91E9-99217950F413}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ComponentManager</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CComponent_AI.h" />
+    <ClInclude Include="CComponent_Animation.h" />
+    <ClInclude Include="CComponent_BossCollision.h" />
+    <ClInclude Include="CComponent_BoxPipeCollision.h" />
+    <ClInclude Include="CComponent_BreakableWallCollision.h" />
+    <ClInclude Include="CComponent_BridgeCollision.h" />
+    <ClInclude Include="CComponent_ButtonCollision.h" />
+    <ClInclude Include="CComponent_Checkpoint.h" />
+    <ClInclude Include="CComponent_CorkCollision.h" />
+    <ClInclude Include="CComponent_CrateCollision.h" />
+    <ClInclude Include="CComponent_CrusherCollision.h" />
+    <ClInclude Include="CComponent_DoorCollision.h" />
+    <ClInclude Include="CComponent_Flasher.h" />
+    <ClInclude Include="CComponent_GooPitCollision.h" />
+    <ClInclude Include="CComponent_Health.h" />
+    <ClInclude Include="CComponent_Input.h" />
+    <ClInclude Include="CComponent_Collision.h" />
+    <ClInclude Include="CComponent_IntakePipeCollision.h" />
+    <ClInclude Include="CComponent_Item.h" />
+    <ClInclude Include="CComponent_LandMeshEffect.h" />
+    <ClInclude Include="CComponent_Lil_Goo_AI.h" />
+    <ClInclude Include="CComponent_LittleGooCollision.h" />
+    <ClInclude Include="CComponent_OutletCollision.h" />
+    <ClInclude Include="CComponent_PlayerArmCollision.h" />
+    <ClInclude Include="CComponent_PlayerCollision.h" />
+    <ClInclude Include="CComponent_PlugCollision.h" />
+    <ClInclude Include="CComponent_Render.h" />
+    <ClInclude Include="CComponent_SlimeMonsterCollision.h" />
+    <ClInclude Include="CComponent_Slime_Monster_AI.h" />
+    <ClInclude Include="CComponent_Sound.h" />
+    <ClInclude Include="CComponent_SpawnPipeCollision.h" />
+    <ClInclude Include="CComponent_SteamPipeCollision.h" />
+    <ClInclude Include="CComponent_WaterPoolCollision.h" />
+    <ClInclude Include="ComponentManager.h" />
+    <ClInclude Include="Component_Emitter.h" />
+    <ClInclude Include="IComponent.h" />
+    <ClInclude Include="CComponent_BasePipe.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CComponent_AI.cpp" />
+    <ClCompile Include="CComponent_Animation.cpp" />
+    <ClCompile Include="CComponent_BasePipe.cpp" />
+    <ClCompile Include="CComponent_BossCollision.cpp" />
+    <ClCompile Include="CComponent_BoxPipeCollision.cpp" />
+    <ClCompile Include="CComponent_BreakableWallCollision.cpp" />
+    <ClCompile Include="CComponent_BridgeCollision.cpp" />
+    <ClCompile Include="CComponent_ButtonCollision.cpp" />
+    <ClCompile Include="CComponent_Checkpoint.cpp" />
+    <ClCompile Include="CComponent_Collision.cpp" />
+    <ClCompile Include="CComponent_CorkCollision.cpp" />
+    <ClCompile Include="CComponent_CrateCollision.cpp" />
+    <ClCompile Include="CComponent_CrusherCollision.cpp" />
+    <ClCompile Include="CComponent_DoorCollision.cpp" />
+    <ClCompile Include="CComponent_Flasher.cpp" />
+    <ClCompile Include="CComponent_GooPitCollision.cpp" />
+    <ClCompile Include="CComponent_Health.cpp" />
+    <ClCompile Include="CComponent_Input.cpp" />
+    <ClCompile Include="CComponent_IntakePipeCollision.cpp" />
+    <ClCompile Include="CComponent_Item.cpp" />
+    <ClCompile Include="CComponent_LandMeshEffect.cpp" />
+    <ClCompile Include="CComponent_Lil_Goo_AI.cpp" />
+    <ClCompile Include="CComponent_LittleGooCollision.cpp" />
+    <ClCompile Include="CComponent_OutletCollision.cpp" />
+    <ClCompile Include="CComponent_PlayerArmCollision.cpp" />
+    <ClCompile Include="CComponent_PlayerCollision.cpp" />
+    <ClCompile Include="CComponent_PlugCollision.cpp" />
+    <ClCompile Include="CComponent_Render.cpp" />
+    <ClCompile Include="CComponent_SlimeMonsterCollision.cpp" />
+    <ClCompile Include="CComponent_Slime_Monster_AI.cpp" />
+    <ClCompile Include="CComponent_Sound.cpp" />
+    <ClCompile Include="CComponent_SpawnPipeCollision.cpp" />
+    <ClCompile Include="CComponent_SteamPipeCollision.cpp" />
+    <ClCompile Include="CComponent_WaterPoolCollision.cpp" />
+    <ClCompile Include="ComponentManager.cpp" />
+    <ClCompile Include="Component_Emitter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

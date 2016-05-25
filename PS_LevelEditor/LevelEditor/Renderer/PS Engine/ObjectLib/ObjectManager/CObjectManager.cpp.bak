@@ -1,0 +1,232 @@
+#include "CObjectManager.h"
+#include "../Objects/IBaseObject.h"
+#include "../Object Factory/CObjectFactory.h"
+#include "../../Utilities/KdTree/KdTree.h"
+
+CObjectManager* CObjectManager::m_pInstance = NULL;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: CObjectManager
+// Purpose: Default Constructor
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+CObjectManager::CObjectManager ()
+{
+	m_pPlayer = nullptr;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: ~CObjectManager
+// Purpose: Default Destructor
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+CObjectManager::~CObjectManager ()
+{
+	Shutdown ();
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: GetInstance
+// Purpose: Returns an instance.
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+CObjectManager* CObjectManager::GetInstance ()
+{
+	if (!m_pInstance)
+	{
+		m_pInstance = new CObjectManager();
+	}
+	return m_pInstance;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: DeleteInstance
+// Purpose: Deletes the instance.
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::DeleteInstance ()
+{
+	if (m_pInstance)
+	{
+		delete m_pInstance;
+		m_pInstance = NULL;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Init
+// Purpose: Inits all information for ObjectManager
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::Init ()
+{
+	m_PhysicsEnvironment.SetGravity( vec3f( 0.0f, -1000.0f, 0.0 ) );
+	m_pObjectFactory.Init();
+	AABB sceneBounds;
+	sceneBounds.SetMaxPoint (vec3f (1000.0f, 100.0f, 50.0f));
+	sceneBounds.SetMinPoint (vec3f (-1000.0f, -100.0f, -50.0f));
+	CKdTree::Init (sceneBounds);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Shutdown
+// Purpose: Shuts down the ObjectManager
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::Shutdown ()
+{
+	//remove all objects and shutdown the kd tree
+	ClearAll ();
+	//m_pComponentManager.Clear();
+	m_pObjectFactory.Shutdown();
+	m_PhysicsEnvironment.Clear();
+	CKdTree::Shutdown();
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Update
+// Purpose: Updates all objects in the ObjectManager
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::Update ( float fElapsedTime )
+{
+	//update all objects
+	m_PhysicsEnvironment.Update( fElapsedTime );
+	m_pComponentManager.Update( fElapsedTime );
+	CKdTree::Update();
+
+	// Remove all the objects that have been queued to be removed.
+	for( list<IBaseObject*>::iterator itr = m_ObjectsToRemove.begin(); itr != m_ObjectsToRemove.end(); itr++)
+	{
+		RemoveObject( *itr);
+	}
+	m_ObjectsToRemove.clear();
+}
+
+void CObjectManager::Render()
+{
+	std::list< IBaseObject* >::iterator itrObj =  m_ObjectList.begin();
+
+	while( itrObj != m_ObjectList.end() )
+	{
+		(*itrObj)->Render();
+		itrObj++;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: AddObject
+// Purpose: Adds the object to the ObjectManager and adds a reference to that object
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+IBaseObject* CObjectManager::CreateObject ( eOBJECT_TYPE eType, D3DXMATRIX _ObjectMatrix )
+{
+	//add pObject to m_vAllObjects
+	IBaseObject* pNewObject = m_pObjectFactory.CreateObject( eType, _ObjectMatrix );
+
+	if( OBJ_PLAYER == eType )
+	{
+		m_pPlayer = pNewObject;
+	}
+	if( eType != OBJ_CRATE || eType != OBJ_CORK )
+	{
+		m_ObjectList.push_back( pNewObject );
+	}
+	else
+	{
+		m_ItemList.push_back( pNewObject );
+	}
+	CKdTree::MasterObjInsert (pNewObject );
+
+	return pNewObject;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: AddObjectToRemove
+// Purpose: Queues the Object to be removed after update.
+// Original Author: Andy Madruga
+// Creation Date: 5/17/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::AddObjectToRemove ( IBaseObject* pObject)
+{
+	m_ObjectsToRemove.push_back( pObject );
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: CheckCollisions
+// Purpose: Removes the object from the ObjectManager and removes a reference to that object
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::RemoveObject ( IBaseObject* pObject )
+{
+	// remove pObject from m_vAllObjects
+	m_ObjectList.remove( pObject );
+	m_pObjectFactory.RemoveObject( pObject );
+	CKdTree::MasterObjRemove ( pObject );
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: RemoveItem
+// Purpose: Removes the object from the ObjectManager and removes a reference to that object
+// Original Author: Rueben Massey
+// Creation Date: 5/15/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::RemoveItem( IBaseObject* pObject)
+{
+	m_ItemList.remove( pObject );
+	m_pObjectFactory.RemoveObject( pObject );
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: ClearAll
+// Purpose: Clears all objects from the ObjectManger and the references to thoses objects
+// Original Author: Josh Fields
+// Creation Date: 3/30/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CObjectManager::ClearAll ()
+{
+	// clear all objects
+	std::list< IBaseObject* >::iterator itrObject = m_ObjectList.begin();
+	while( itrObject != m_ObjectList.end() )
+	{
+		// Some kind of removal happens here.
+		CKdTree::MasterObjRemove ( (*itrObject) );
+		m_pObjectFactory.RemoveObject( (*itrObject) );
+		itrObject++;
+	}
+	m_pComponentManager.Clear();
+	m_ObjectList.clear();
+}

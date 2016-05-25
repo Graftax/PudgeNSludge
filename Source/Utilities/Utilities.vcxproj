@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7D5E8EC-2F35-4C13-B2D2-55F74A7ED713}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Utilities</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CollisionLib\CollisionAABB.h" />
+    <ClInclude Include="CollisionLib\CollisionBox.h" />
+    <ClInclude Include="CollisionLib\CollisionCapsule.h" />
+    <ClInclude Include="CollisionLib\CollisionCircle.h" />
+    <ClInclude Include="CollisionLib\CollisionCube.h" />
+    <ClInclude Include="CollisionLib\CollisionFrustum.h" />
+    <ClInclude Include="CollisionLib\CollisionLib.h" />
+    <ClInclude Include="CollisionLib\CollisionLine.h" />
+    <ClInclude Include="CollisionLib\CollisionPlane.h" />
+    <ClInclude Include="CollisionLib\CollisionPoint.h" />
+    <ClInclude Include="CollisionLib\CollisionPolygone.h" />
+    <ClInclude Include="CollisionLib\CollisionRay.h" />
+    <ClInclude Include="CollisionLib\CollisionShapes.h" />
+    <ClInclude Include="CollisionLib\CollisionSphere.h" />
+    <ClInclude Include="CollisionLib\CollisionVolume.h" />
+    <ClInclude Include="Frame\Frame.h" />
+    <ClInclude Include="Frame\Node.h" />
+    <ClInclude Include="Interpolate.h" />
+    <ClInclude Include="KdTree\KdTree.h" />
+    <ClInclude Include="KdTree\KdTreeNodes.h" />
+    <ClInclude Include="Logger\Lock.h" />
+    <ClInclude Include="Logger\Logger.h" />
+    <ClInclude Include="MathLib\matrix3.h" />
+    <ClInclude Include="MathLib\matrix4.h" />
+    <ClInclude Include="MathLib\vec3.h" />
+    <ClInclude Include="MathLib\vec4.h" />
+    <ClInclude Include="Timer\UTimer.h" />
+    <ClInclude Include="Utilit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CollisionLib\CollisionAABB.cpp" />
+    <ClCompile Include="CollisionLib\CollisionBox.cpp" />
+    <ClCompile Include="CollisionLib\CollisionCapsule.cpp" />
+    <ClCompile Include="CollisionLib\CollisionCircle.cpp" />
+    <ClCompile Include="CollisionLib\CollisionCube.cpp" />
+    <ClCompile Include="CollisionLib\CollisionFrustum.cpp" />
+    <ClCompile Include="CollisionLib\CollisionLib.cpp" />
+    <ClCompile Include="CollisionLib\CollisionLine.cpp" />
+    <ClCompile Include="CollisionLib\CollisionPlane.cpp" />
+    <ClCompile Include="CollisionLib\CollisionPoint.cpp" />
+    <ClCompile Include="CollisionLib\CollisionPolygone.cpp" />
+    <ClCompile Include="CollisionLib\CollisionRay.cpp" />
+    <ClCompile Include="CollisionLib\CollisionSphere.cpp" />
+    <ClCompile Include="Interpolate.cpp" />
+    <ClCompile Include="KdTree\KdTree.cpp" />
+    <ClCompile Include="KdTree\KdTreeNodes.cpp" />
+    <ClCompile Include="Logger\Lock.cpp" />
+    <ClCompile Include="Logger\Logger.cpp" />
+    <ClCompile Include="Timer\UTimer.cpp" />
+    <ClCompile Include="Utilit.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

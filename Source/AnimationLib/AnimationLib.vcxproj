@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E1B451A-E9DA-45EC-B473-85170E98921E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AnimationLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationBlender.cpp" />
+    <ClCompile Include="AnimationManager.cpp" />
+    <ClCompile Include="AnimationStateMachine.cpp" />
+    <ClCompile Include="AnimationSystem.cpp" />
+    <ClCompile Include="AnimBeltState.cpp" />
+    <ClCompile Include="AnimBossState.cpp" />
+    <ClCompile Include="AnimBoxesState.cpp" />
+    <ClCompile Include="AnimClawState.cpp" />
+    <ClCompile Include="AnimCrateClawState.cpp" />
+    <ClCompile Include="AnimFanState.cpp" />
+    <ClCompile Include="BigHurtEffectState.cpp" />
+    <ClCompile Include="BigHurtIdleEffectState.cpp" />
+    <ClCompile Include="BridgeHalfRetractIdleState.cpp" />
+    <ClCompile Include="BridgeHalfRetractState.cpp" />
+    <ClCompile Include="BridgeIdleState.cpp" />
+    <ClCompile Include="ButtonClosingState.cpp" />
+    <ClCompile Include="ButtonIdleState.cpp" />
+    <ClCompile Include="DeathCloudPudgeDeathState.cpp" />
+    <ClCompile Include="DoorIdleState.cpp" />
+    <ClCompile Include="DoorOpenIdleState.cpp" />
+    <ClCompile Include="DoorOpenState.cpp" />
+    <ClCompile Include="ImpactEffectState.cpp" />
+    <ClCompile Include="JumpEffectState.cpp" />
+    <ClCompile Include="JumpIdleEffectState.cpp" />
+    <ClCompile Include="LandEffectState.cpp" />
+    <ClCompile Include="LandIdleEffectState.cpp" />
+    <ClCompile Include="LilGooAttackState.cpp" />
+    <ClCompile Include="LilGooFlyingState.cpp" />
+    <ClCompile Include="LilGooWalkState.cpp" />
+    <ClCompile Include="LittleHurtEffectState.cpp" />
+    <ClCompile Include="PudgeBackPeddleState.cpp" />
+    <ClCompile Include="PudgeBigDamageState.cpp" />
+    <ClCompile Include="PudgeDeathByCrusherState.cpp" />
+    <ClCompile Include="PudgeDeathByGooState.cpp" />
+    <ClCompile Include="PudgeFallingState.cpp" />
+    <ClCompile Include="PudgeIdleState.cpp" />
+    <ClCompile Include="PudgeIdleToJumpState.cpp" />
+    <ClCompile Include="PudgeIdleToPullState.cpp" />
+    <ClCompile Include="PudgeIdleToRunState.cpp" />
+    <ClCompile Include="PudgeJumpState.cpp" />
+    <ClCompile Include="PudgeJumpToFallingState.cpp" />
+    <ClCompile Include="PudgePullState.cpp" />
+    <ClCompile Include="PudgeRunState.cpp" />
+    <ClCompile Include="PudgeRunToIdleState.cpp" />
+    <ClCompile Include="PudgeSmallDamageState.cpp" />
+    <ClCompile Include="PudgeWallJumpState.cpp" />
+    <ClCompile Include="PudgePushState.cpp" />
+    <ClCompile Include="PudgeWallSlideState.cpp" />
+    <ClCompile Include="PullEffectIdleState.cpp" />
+    <ClCompile Include="PullEffectPullForeverState.cpp" />
+    <ClCompile Include="PullEffectState.cpp" />
+    <ClCompile Include="PushEffectIdleState.cpp" />
+    <ClCompile Include="PushEffectState.cpp" />
+    <ClCompile Include="SelectionMeshRotatingState.cpp" />
+    <ClCompile Include="SelectionMeshSpawnState.cpp" />
+    <ClCompile Include="SlimeMonsterDeathState.cpp" />
+    <ClCompile Include="SlimeMonsterHideState.cpp" />
+    <ClCompile Include="SlimeMonsterIdleState.cpp" />
+    <ClCompile Include="SlimeMonsterSneakAttackState.cpp" />
+    <ClCompile Include="SlimeMonsterStunState.cpp" />
+    <ClCompile Include="SlimeMonsterThrowAttackState.cpp" />
+    <ClCompile Include="SlimeMonsterWalkState.cpp" />
+    <ClCompile Include="SludgeFallCrusherAttack.cpp" />
+    <ClCompile Include="SludgeFlyAway.cpp" />
+    <ClCompile Include="SludgeIdleState.cpp" />
+    <ClCompile Include="SludgeLandCrusherAttack.cpp" />
+    <ClCompile Include="SludgePullLeverDownState.cpp" />
+    <ClCompile Include="SludgeSpinAttackState.cpp" />
+    <ClCompile Include="SludgesShipFallCrusherAttack.cpp" />
+    <ClCompile Include="SludgesShipIdleDamage.cpp" />
+    <ClCompile Include="SludgesShipIdleState.cpp" />
+    <ClCompile Include="SludgesShipLandCrusherAttack.cpp" />
+    <ClCompile Include="SludgesShipPullLeverDownState.cpp" />
+    <ClCompile Include="SludgesShipSpinAttackState.cpp" />
+    <ClCompile Include="SludgesShipStartCrusherAttack.cpp" />
+    <ClCompile Include="SludgesShipSteamAttack.cpp" />
+    <ClCompile Include="SludgeStartCrusherAttack.cpp" />
+    <ClCompile Include="SludgeSteamAttack.cpp" />
+    <ClCompile Include="SpawnPipeDripState.cpp" />
+    <ClCompile Include="VacuumArmIdleState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationBlender.h" />
+    <ClInclude Include="AnimationIncludes.h" />
+    <ClInclude Include="AnimationManager.h" />
+    <ClInclude Include="AnimationStateMachine.h" />
+    <ClInclude Include="AnimationSystem.h" />
+    <ClInclude Include="AnimBeltState.h" />
+    <ClInclude Include="AnimBossState.h" />
+    <ClInclude Include="AnimBoxesState.h" />
+    <ClInclude Include="AnimClawState.h" />
+    <ClInclude Include="AnimCrateClawState.h" />
+    <ClInclude Include="AnimFanState.h" />
+    <ClInclude Include="BigHurtEffectState.h" />
+    <ClInclude Include="BigHurtIdleEffectState.h" />
+    <ClInclude Include="BoneFrame.h" />
+    <ClInclude Include="BridgeHalfRetractIdleState.h" />
+    <ClInclude Include="BridgeHalfRetractState.h" />
+    <ClInclude Include="BridgeIdleState.h" />
+    <ClInclude Include="ButtonClosingState.h" />
+    <ClInclude Include="ButtonIdleState.h" />
+    <ClInclude Include="DeathCloudPudgeDeathState.h" />
+    <ClInclude Include="DoorIdleState.h" />
+    <ClInclude Include="DoorOpenIdleState.h" />
+    <ClInclude Include="DoorOpenState.h" />
+    <ClInclude Include="ImpactEffectState.h" />
+    <ClInclude Include="JumpEffectState.h" />
+    <ClInclude Include="JumpIdleEffectState.h" />
+    <ClInclude Include="LandEffectState.h" />
+    <ClInclude Include="LandIdleEffectState.h" />
+    <ClInclude Include="LilGooAttackState.h" />
+    <ClInclude Include="LilGooFlyingState.h" />
+    <ClInclude Include="LilGooWalkState.h" />
+    <ClInclude Include="LittleHurtEffectState.h" />
+    <ClInclude Include="PudgeBackPeddleState.h" />
+    <ClInclude Include="PudgeBigDamageState.h" />
+    <ClInclude Include="PudgeDeathByCrusherState.h" />
+    <ClInclude Include="PudgeDeathByGooState.h" />
+    <ClInclude Include="PudgeFallingState.h" />
+    <ClInclude Include="PudgeIdleState.h" />
+    <ClInclude Include="PudgeIdleToJumpState.h" />
+    <ClInclude Include="PudgeIdleToPullState.h" />
+    <ClInclude Include="PudgeIdleToRunState.h" />
+    <ClInclude Include="PudgeJumpState.h" />
+    <ClInclude Include="PudgeJumpToFallingState.h" />
+    <ClInclude Include="PudgePullState.h" />
+    <ClInclude Include="PudgeRunState.h" />
+    <ClInclude Include="PudgeRunToIdleState.h" />
+    <ClInclude Include="PudgeSmallDamageState.h" />
+    <ClInclude Include="PudgeWallJumpState.h" />
+    <ClInclude Include="PudgePushState.h" />
+    <ClInclude Include="PudgeWallSlideState.h" />
+    <ClInclude Include="PullEffectIdleState.h" />
+    <ClInclude Include="PullEffectPullForeverState.h" />
+    <ClInclude Include="PullEffectState.h" />
+    <ClInclude Include="PushEffectIdleState.h" />
+    <ClInclude Include="PushEffectState.h" />
+    <ClInclude Include="SelectionMeshRotatingState.h" />
+    <ClInclude Include="SelectionMeshSpawnState.h" />
+    <ClInclude Include="SlimeMonsterDeathState.h" />
+    <ClInclude Include="SlimeMonsterHideState.h" />
+    <ClInclude Include="SlimeMonsterIdleState.h" />
+    <ClInclude Include="SlimeMonsterSneakAttackState.h" />
+    <ClInclude Include="SlimeMonsterStunState.h" />
+    <ClInclude Include="SlimeMonsterThrowAttackState.h" />
+    <ClInclude Include="SlimeMonsterWalkState.h" />
+    <ClInclude Include="SludgeFallCrusherAttack.h" />
+    <ClInclude Include="SludgeFlyAway.h" />
+    <ClInclude Include="SludgeIdleState.h" />
+    <ClInclude Include="SludgeLandCrusherAttack.h" />
+    <ClInclude Include="SludgePullLeverDownState.h" />
+    <ClInclude Include="SludgeSpinAttackState.h" />
+    <ClInclude Include="SludgesShipFallCrusherAttack.h" />
+    <ClInclude Include="SludgesShipIdleDamage.h" />
+    <ClInclude Include="SludgesShipIdleState.h" />
+    <ClInclude Include="SludgesShipLandCrusherAttack.h" />
+    <ClInclude Include="SludgesShipPullLeverDownState.h" />
+    <ClInclude Include="SludgesShipSpinAttackState.h" />
+    <ClInclude Include="SludgesShipStartCrusherAttack.h" />
+    <ClInclude Include="SludgesShipSteamAttack.h" />
+    <ClInclude Include="SludgeStartCrusherAttack.h" />
+    <ClInclude Include="SludgeSteamAttack.h" />
+    <ClInclude Include="SpawnPipeDripState.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="VacuumArmIdleState.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

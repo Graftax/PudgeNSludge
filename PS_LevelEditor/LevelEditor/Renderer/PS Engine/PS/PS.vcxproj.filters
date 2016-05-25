@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{664c8045-977f-4b2f-bb18-78a39c205d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="My Amplifier Results">
+      <UniqueIdentifier>{d31a3e2e-3725-48fb-895b-40cc5616e23a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CAudioOptionsState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CEndGameState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\COptionsState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CPauseState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CVideoOptionsState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CWinGameState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\GamePlayState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\MainMenuState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CSplashScreenState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CCreditsState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\CLoadingState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CAudioOptionsStates.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CEndGameState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\COptionsState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CPauseState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CVideoOptionsState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CWinGameState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\GamePlayState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\IGameState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\MainMenuState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CSplashScreenState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CCreditsState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\CLoadingState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Amplifier Results\r005hs\r005hs.ampl">
+      <Filter>My Amplifier Results</Filter>
+    </None>
+  </ItemGroup>
+</Project>

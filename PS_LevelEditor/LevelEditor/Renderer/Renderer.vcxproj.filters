@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="PS RenderEngine">
+      <UniqueIdentifier>{8cb8d6af-3fea-4074-95b9-f746a3d06780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathLib">
+      <UniqueIdentifier>{be5fbb8f-7c2a-4876-af31-dba8e692a060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectsLib">
+      <UniqueIdentifier>{79d024cf-21e6-4ce2-925d-8318808e138d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PS RenderEngine\LightSystem">
+      <UniqueIdentifier>{e97bc2e1-0265-4d28-8b06-ff2db639bfc0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>ObjectsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="IBaseObject.cpp">
+      <Filter>ObjectsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>ObjectsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\DebugShapes.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\MeshManager.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\MultiThreadRender.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\PostProcess.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\RenderEngine.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\RenderEngineDrawFunctions.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\RenderNode.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\RenderSet.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\RenderSetSorted.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\RenderTarget.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\TextureManager.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\Timer.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\LightSystem\DirectionalLight.cpp">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\LightSystem\Light.cpp">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\LightSystem\LightManager.cpp">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\LightSystem\PointLight.cpp">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\LightSystem\SpotLight.cpp">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PS RenderEngine\PostProcessChain.cpp">
+      <Filter>PS RenderEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\matrix3.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\matrix4.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\vec2.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\vec3.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\vec4.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>ObjectsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseObject.h">
+      <Filter>ObjectsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>ObjectsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\DebugShapes.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\Mesh.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\MeshManager.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\MultiThreadRender.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\PackUtilities.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\PostProcess.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\RenderEngine.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\RenderHandle.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\RenderNode.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\RenderSet.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\RenderSetSorted.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\RenderTarget.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\TextureManager.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\Timer.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\VertexDeclerations.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\LightSystem\DirectionalLight.h">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\LightSystem\Light.h">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\LightSystem\LightManager.h">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\LightSystem\PointLight.h">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\LightSystem\SpotLight.h">
+      <Filter>PS RenderEngine\LightSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PS RenderEngine\PostProcessChain.h">
+      <Filter>PS RenderEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

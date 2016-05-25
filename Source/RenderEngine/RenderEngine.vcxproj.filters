@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{94a67bd3-3d35-4887-b414-a65f76ec9dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights">
+      <UniqueIdentifier>{db5e6b6d-e588-4058-815c-4e52193a5167}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MeshManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugShapes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSystem\Light.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSystem\PointLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSystem\SpotLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSystem\DirectionalLight.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngineDrawFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSystem\LightManager.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSetSorted.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiThreadRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PackUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexDeclerations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugShapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSystem\Light.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSystem\PointLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSystem\SpotLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSystem\DirectionalLight.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSystem\LightManager.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSetSorted.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiThreadRender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessChain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\Shaders\AnimatedTexture.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\CommonShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\Cube.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\Particle.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\Pyramid.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\StaticObjects.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\texture.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\GBuffer.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\DirectionalLight.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\PointLight.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\SpotLight.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\DepthOfField.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\PPBlur.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\PPBlurH.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\PPBlurV.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\DrawEdges.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\2DTransform.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\DownSample.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\UpSample.fx">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

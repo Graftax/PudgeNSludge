@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="9">
+	<RootPaths>
+		<ProjectRoot>D:\_Wwise Projects\InfiniteHP\</ProjectRoot>
+		<SourceFilesRoot>D:\_Wwise Projects\InfiniteHP\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\_Wwise Projects\InfiniteHP\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\_Wwise Projects\InfiniteHP\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<Arguments />
+	<DialogueEvents />
+	<StreamedFiles />
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedEvents />
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles />
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX">
+			<ShortName>SoundBank</ShortName>
+			<Path>SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1915694227" Name="Mute_PS_CheckPoint" />
+				<Event Id="362915730" Name="Mute_PS_Enemy_JunkHulk" />
+				<Event Id="272169346" Name="Mute_PS_Enemy_LilGoo" />
+				<Event Id="1141754644" Name="Mute_PS_Enemy_SlimeMonster" />
+				<Event Id="3864097025" Name="Pause_All" />
+				<Event Id="418504340" Name="Play_DLG_BOSS_DEATH" />
+				<Event Id="3444704545" Name="Play_DLG_BOSS_HURT" />
+				<Event Id="239700541" Name="Play_DLG_BOSS_LAUGH" />
+				<Event Id="604166375" Name="Play_DLG_JUNKHULK_DEATH" />
+				<Event Id="3607140359" Name="Play_DLG_JUNKHULK_ROAR" />
+				<Event Id="2743858763" Name="Play_DLG_LILGOO_DEATH" />
+				<Event Id="4083921960" Name="Play_DLG_PLAYER_DEATH" />
+				<Event Id="2149769994" Name="Play_DLG_PLAYER_HURT_BIG" />
+				<Event Id="3697544573" Name="Play_DLG_PLAYER_HURT_SMALL" />
+				<Event Id="1320269453" Name="Play_DLG_SLIMEMONSTER_ATTACK" />
+				<Event Id="1026845905" Name="Play_DLG_SLIMEMONSTER_DEATH" />
+				<Event Id="2134782623" Name="Play_DLG_SLIMEMONSTER_IDLE" />
+				<Event Id="1873658711" Name="Play_LilGoo_SuckedUp" />
+				<Event Id="2837110669" Name="Play_MX_Music" />
+				<Event Id="724258642" Name="Play_SFX_Ambience" />
+				<Event Id="2084079710" Name="Play_SFX_BOSS_DEATH_EXPLOSION" />
+				<Event Id="1679763899" Name="Play_SFX_BUTTON_CLICK" />
+				<Event Id="2141506958" Name="Play_SFX_CORK_COLLIDE" />
+				<Event Id="3593709632" Name="Play_SFX_CORK_PIPE" />
+				<Event Id="3115233188" Name="Play_SFX_CRATE_COLLIDE" />
+				<Event Id="1412165763" Name="Play_SFX_DOOR_CLOSE" />
+				<Event Id="1312371701" Name="Play_SFX_DOOR_OPEN" />
+				<Event Id="2692050388" Name="Play_SFX_ENEMY_JUNKHULK_CHARGE" />
+				<Event Id="3163131174" Name="Play_SFX_ENEMY_JUNKHULK_DEATH" />
+				<Event Id="1177205730" Name="Play_SFX_ENEMY_JUNKHULK_PATROL" />
+				<Event Id="2543871858" Name="Play_SFX_ENEMY_LILGOO_DEATH" />
+				<Event Id="3167785073" Name="Play_SFX_ENEMY_LILGOO_HOP" />
+				<Event Id="4175796667" Name="Play_SFX_ENEMY_LILGOO_LAND" />
+				<Event Id="3135739177" Name="Play_SFX_ENEMY_LILGOO_SPLASH" />
+				<Event Id="2658108630" Name="Play_SFX_ENEMY_SLIMEMONSTER_ATTACK" />
+				<Event Id="4052346956" Name="Play_SFX_ENEMY_SLIMEMONSTER_DEATH" />
+				<Event Id="1129736703" Name="Play_SFX_ENEMY_SLIMEMONSTER_HOP" />
+				<Event Id="1337536429" Name="Play_SFX_ENEMY_SLIMEMONSTER_LAND" />
+				<Event Id="1534972551" Name="Play_SFX_ENEMY_SLIMEMONSTER_SPLASH" />
+				<Event Id="341096037" Name="Play_SFX_ENEMY_SLIMEMONSTER_SUPRISE" />
+				<Event Id="2533290200" Name="Play_SFX_HAZARD_BREAKABLE_WALL_CRUMBLE" />
+				<Event Id="3191211140" Name="Play_SFX_HAZARD_BRIDGE_FINISH" />
+				<Event Id="1669609860" Name="Play_SFX_HAZARD_BRIDGE_MOVING_LOOP" />
+				<Event Id="2713670331" Name="Play_SFX_HAZARD_CRUSHER_CRUSH" />
+				<Event Id="3292849569" Name="Play_SFX_HAZARD_CRUSHER_RISING_LOOP" />
+				<Event Id="169500878" Name="Play_SFX_HAZARD_CRUSHER_STEAM" />
+				<Event Id="2894320709" Name="Play_SFX_HAZARD_GOOPIT_BLOOP_LOOP" />
+				<Event Id="4122246881" Name="Play_SFX_HAZARD_OUTLET_SPARK_LOOP" />
+				<Event Id="3916607607" Name="Play_SFX_HAZARD_STEAM_PIPE_LOOP" />
+				<Event Id="767268528" Name="Play_SFX_LILGOO_DISPENSOR" />
+				<Event Id="15825018" Name="Play_SFX_MENU_ACCEPT" />
+				<Event Id="3750105340" Name="Play_SFX_MENU_CANCEL" />
+				<Event Id="2325698166" Name="Play_SFX_MENU_HIGHLIGHT" />
+				<Event Id="104406152" Name="Play_SFX_MENU_PAUSE" />
+				<Event Id="2358585575" Name="Play_SFX_MENU_UNPAUSE" />
+				<Event Id="604897336" Name="Play_SFX_PLAYER_JUMP" />
+				<Event Id="2037741043" Name="Play_SFX_PLAYER_LAND" />
+				<Event Id="1139879086" Name="Play_SFX_PLAYER_PULL_LOOP" />
+				<Event Id="3350883448" Name="Play_SFX_PLAYER_PUSH" />
+				<Event Id="2780956577" Name="Play_SFX_PLAYER_SPLASH" />
+				<Event Id="3803645072" Name="Play_SFX_PLAYER_SPLASH_GOOPIT" />
+				<Event Id="1951426911" Name="Play_SFX_PLAYER_WALK" />
+				<Event Id="2998937529" Name="Play_SFX_PLUG_COLLIDE" />
+				<Event Id="1886176810" Name="Play_SFX_PLUG_OUTLET" />
+				<Event Id="2509260305" Name="Play_SFX_Pudge_Wall_Grab" />
+				<Event Id="3249964255" Name="Play_SFX_Pudge_Wall_Slide_Loop" />
+				<Event Id="3660904182" Name="Play_SFX_SplashScreen_InfiniteHP" />
+				<Event Id="3665415285" Name="Play_SFX_Sprinklers" />
+				<Event Id="2934397188" Name="Play_SFX_VACUUM_PICKUP_OBJECT" />
+				<Event Id="2899874883" Name="Play_SFX_WATERPOOL_HEAL_LOOP" />
+				<Event Id="258327048" Name="Play_SFX_WwiseSplash" />
+				<Event Id="3679762312" Name="Resume_All" />
+				<Event Id="452547817" Name="Stop_All" />
+				<Event Id="1780160215" Name="Stop_MX_Music" />
+				<Event Id="1563416072" Name="Stop_SFX_Ambience" />
+				<Event Id="1235613922" Name="Stop_SFX_HAZARD_BRIDGE_MOVING_LOOP" />
+				<Event Id="3577358767" Name="Stop_SFX_HAZARD_CRUSHER_RISING_LOOP" />
+				<Event Id="2143522867" Name="Stop_SFX_HAZARD_GOOPIT_BLOOP_LOOP" />
+				<Event Id="1375201479" Name="Stop_SFX_HAZARD_OUTLET_SPARK_LOOP" />
+				<Event Id="281032833" Name="Stop_SFX_HAZARD_STEAM_PIPE_LOOP" />
+				<Event Id="3985130060" Name="Stop_SFX_PLAYER_PULL_LOOP" />
+				<Event Id="1862514029" Name="Stop_SFX_Pudge_Wall_Slide_Loop" />
+				<Event Id="654863583" Name="Stop_SFX_Sprinklers" />
+				<Event Id="2372666473" Name="Stop_SFX_WATERPOOL_HEAL_LOOP" />
+				<Event Id="500570186" Name="UnMute_PS_CheckPoint" />
+				<Event Id="2120280895" Name="UnMute_PS_Enemy_JunkHulk" />
+				<Event Id="2887394471" Name="UnMute_PS_Enemy_LilGoo" />
+				<Event Id="90160733" Name="UnMute_PS_Enemy_SlimeMonster" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="778918658" Language="SFX">
+					<ShortName>Boss_Frustrated_01.wav</ShortName>
+					<Path>sfx\boss_frustrated_01_d47d75be.wem</Path>
+				</File>
+				<File Id="120696473" Language="SFX">
+					<ShortName>Boss_Frustrated_02.wav</ShortName>
+					<Path>sfx\boss_frustrated_02_d47d75be.wem</Path>
+				</File>
+				<File Id="86195928" Language="SFX">
+					<ShortName>Boss_Frustrated_03.wav</ShortName>
+					<Path>sfx\boss_frustrated_03_d47d75be.wem</Path>
+				</File>
+				<File Id="387542273" Language="SFX">
+					<ShortName>Boss_Hurt_01.wav</ShortName>
+					<Path>sfx\boss_hurt_01_d47d75be.wem</Path>
+				</File>
+				<File Id="858519475" Language="SFX">
+					<ShortName>Boss_Hurt_02.wav</ShortName>
+					<Path>sfx\boss_hurt_02_d47d75be.wem</Path>
+				</File>
+				<File Id="666319700" Language="SFX">
+					<ShortName>Boss_Hurt_03.wav</ShortName>
+					<Path>sfx\boss_hurt_03_d47d75be.wem</Path>
+				</File>
+				<File Id="834303307" Language="SFX">
+					<ShortName>Boss_Hurt_04.wav</ShortName>
+					<Path>sfx\boss_hurt_04_d47d75be.wem</Path>
+				</File>
+				<File Id="817867673" Language="SFX">
+					<ShortName>Boss_Hurt_05.wav</ShortName>
+					<Path>sfx\boss_hurt_05_d47d75be.wem</Path>
+				</File>
+				<File Id="701809274" Language="SFX">
+					<ShortName>Boss_Hurt_06.wav</ShortName>
+					<Path>sfx\boss_hurt_06_d47d75be.wem</Path>
+				</File>
+				<File Id="542172392" Language="SFX">
+					<ShortName>Boss_Laugh_01.wav</ShortName>
+					<Path>sfx\boss_laugh_01_d47d75be.wem</Path>
+				</File>
+				<File Id="898889661" Language="SFX">
+					<ShortName>Boss_Laugh_02.wav</ShortName>
+					<Path>sfx\boss_laugh_02_d47d75be.wem</Path>
+				</File>
+				<File Id="868508942" Language="SFX">
+					<ShortName>Boss_Laugh_03.wav</ShortName>
+					<Path>sfx\boss_laugh_03_d47d75be.wem</Path>
+				</File>
+				<File Id="704049129" Language="SFX">
+					<ShortName>DLG_BOSS_DEATH.wav</ShortName>
+					<Path>sfx\dlg_boss_death_d47d75be.wem</Path>
+				</File>
+				<File Id="736487540" Language="SFX">
+					<ShortName>DLG_JUNKHULK_DEATH.wav</ShortName>
+					<Path>sfx\dlg_junkhulk_death_d47d75be.wem</Path>
+				</File>
+				<File Id="807971078" Language="SFX">
+					<ShortName>DLG_JUNKHULK_ROAR.wav</ShortName>
+					<Path>sfx\dlg_junkhulk_roar_d47d75be.wem</Path>
+				</File>
+				<File Id="219787446" Language="SFX">
+					<ShortName>DLG_SLIMEMONSTER_DEATH.wav</ShortName>
+					<Path>sfx\dlg_slimemonster_death_d47d75be.wem</Path>
+				</File>
+				<File Id="839691166" Language="SFX">
+					<ShortName>DLG_SLIMEMONSTER_IDLE.wav</ShortName>
+					<Path>sfx\dlg_slimemonster_idle_d47d75be.wem</Path>
+				</File>
+				<File Id="711982385" Language="SFX">
+					<ShortName>FX_WwiseSplash.wav</ShortName>
+					<Path>sfx\fx_wwisesplash_d47d75be.wem</Path>
+				</File>
+				<File Id="15465403" Language="SFX">
+					<ShortName>PS_CheckPoint.wav</ShortName>
+					<Path>sfx\ps_checkpoint_ab9e423e.wem</Path>
+				</File>
+				<File Id="222957208" Language="SFX">
+					<ShortName>PS_Credits.wav</ShortName>
+					<Path>sfx\ps_credits_ab9e423e.wem</Path>
+				</File>
+				<File Id="201995297" Language="SFX">
+					<ShortName>PS_Enemy_JunkHulk.wav</ShortName>
+					<Path>sfx\ps_enemy_junkhulk_ab9e423e.wem</Path>
+				</File>
+				<File Id="84284753" Language="SFX">
+					<ShortName>PS_Enemy_LilGoo.wav</ShortName>
+					<Path>sfx\ps_enemy_lilgoo_ab9e423e.wem</Path>
+				</File>
+				<File Id="286062808" Language="SFX">
+					<ShortName>PS_Enemy_SlimeMonster.wav</ShortName>
+					<Path>sfx\ps_enemy_slimemonster_ab9e423e.wem</Path>
+				</File>
+				<File Id="1035488106" Language="SFX">
+					<ShortName>PS_Level1.wav</ShortName>
+					<Path>sfx\ps_level1_ab9e423e.wem</Path>
+				</File>
+				<File Id="256371904" Language="SFX">
+					<ShortName>PS_Level2.wav</ShortName>
+					<Path>sfx\ps_level2_ab9e423e.wem</Path>
+				</File>
+				<File Id="334341243" Language="SFX">
+					<ShortName>PS_Level3.wav</ShortName>
+					<Path>sfx\ps_level3_ab9e423e.wem</Path>
+				</File>
+				<File Id="955328821" Language="SFX">
+					<ShortName>PS_Level4.wav</ShortName>
+					<Path>sfx\ps_level4_ab9e423e.wem</Path>
+				</File>
+				<File Id="15206179" Language="SFX">
+					<ShortName>PS_LevelBoss.wav</ShortName>
+					<Path>sfx\ps_levelboss_ab9e423e.wem</Path>
+				</File>
+				<File Id="500559093" Language="SFX">
+					<ShortName>PS_LevelDarkCarnival.wav</ShortName>
+					<Path>sfx\ps_leveldarkcarnival_ab9e423e.wem</Path>
+				</File>
+				<File Id="285653451" Language="SFX">
+					<ShortName>PS_Menu.wav</ShortName>
+					<Path>sfx\ps_menu_ab9e423e.wem</Path>
+				</File>
+				<File Id="500977923" Language="SFX">
+					<ShortName>Pudge_Death_01.wav</ShortName>
+					<Path>sfx\pudge_death_01_d47d75be.wem</Path>
+				</File>
+				<File Id="301379893" Language="SFX">
+					<ShortName>Pudge_Death_02.wav</ShortName>
+					<Path>sfx\pudge_death_02_d47d75be.wem</Path>
+				</File>
+				<File Id="455992108" Language="SFX">
+					<ShortName>Pudge_Grab_01.wav</ShortName>
+					<Path>sfx\pudge_grab_01_d47d75be.wem</Path>
+				</File>
+				<File Id="638290538" Language="SFX">
+					<ShortName>Pudge_Grab_02.wav</ShortName>
+					<Path>sfx\pudge_grab_02_d47d75be.wem</Path>
+				</File>
+				<File Id="221917396" Language="SFX">
+					<ShortName>Pudge_Grab_03.wav</ShortName>
+					<Path>sfx\pudge_grab_03_d47d75be.wem</Path>
+				</File>
+				<File Id="644371478" Language="SFX">
+					<ShortName>Pudge_Grab_04.wav</ShortName>
+					<Path>sfx\pudge_grab_04_d47d75be.wem</Path>
+				</File>
+				<File Id="84258428" Language="SFX">
+					<ShortName>Pudge_Hurt_01.wav</ShortName>
+					<Path>sfx\pudge_hurt_01_d47d75be.wem</Path>
+				</File>
+				<File Id="872692201" Language="SFX">
+					<ShortName>Pudge_Hurt_02.wav</ShortName>
+					<Path>sfx\pudge_hurt_02_d47d75be.wem</Path>
+				</File>
+				<File Id="799655293" Language="SFX">
+					<ShortName>Pudge_Hurt_03.wav</ShortName>
+					<Path>sfx\pudge_hurt_03_d47d75be.wem</Path>
+				</File>
+				<File Id="539668977" Language="SFX">
+					<ShortName>Pudge_Hurt_04.wav</ShortName>
+					<Path>sfx\pudge_hurt_04_d47d75be.wem</Path>
+				</File>
+				<File Id="692362396" Language="SFX">
+					<ShortName>Pudge_Jump_04.wav</ShortName>
+					<Path>sfx\pudge_jump_04_d47d75be.wem</Path>
+				</File>
+				<File Id="470653339" Language="SFX">
+					<ShortName>Pudge_Jump_05.wav</ShortName>
+					<Path>sfx\pudge_jump_05_d47d75be.wem</Path>
+				</File>
+				<File Id="10999551" Language="SFX">
+					<ShortName>SFX_Ambience_Loop_01.wav</ShortName>
+					<Path>sfx\sfx_ambience_loop_01_d47d75bf.wem</Path>
+				</File>
+				<File Id="879048766" Language="SFX">
+					<ShortName>SFX_Ambience_Loop_02.wav</ShortName>
+					<Path>sfx\sfx_ambience_loop_02_d47d75bf.wem</Path>
+				</File>
+				<File Id="985938767" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_01.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_01_d47d75be.wem</Path>
+				</File>
+				<File Id="127213503" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_02.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_02_d47d75be.wem</Path>
+				</File>
+				<File Id="182988889" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_03.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_03_d47d75be.wem</Path>
+				</File>
+				<File Id="369714300" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_04.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_04_d47d75be.wem</Path>
+				</File>
+				<File Id="185723394" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_05.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_05_d47d75be.wem</Path>
+				</File>
+				<File Id="421259779" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_06.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_06_d47d75be.wem</Path>
+				</File>
+				<File Id="660507623" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_07.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_07_d47d75be.wem</Path>
+				</File>
+				<File Id="579068473" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_08.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_08_d47d75be.wem</Path>
+				</File>
+				<File Id="9927735" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_09.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_09_d47d75be.wem</Path>
+				</File>
+				<File Id="819869854" Language="SFX">
+					<ShortName>SFX_Ambience_RandomStinger_10.wav</ShortName>
+					<Path>sfx\sfx_ambience_randomstinger_10_d47d75be.wem</Path>
+				</File>
+				<File Id="119509258" Language="SFX">
+					<ShortName>SFX_Ambience_Silence.wav</ShortName>
+					<Path>sfx\sfx_ambience_silence_d47d75be.wem</Path>
+				</File>
+				<File Id="1038322587" Language="SFX">
+					<ShortName>SFX_Boss_Explode01.wav</ShortName>
+					<Path>sfx\sfx_boss_explode01_d47d75be.wem</Path>
+				</File>
+				<File Id="622820236" Language="SFX">
+					<ShortName>SFX_Boss_Explode02.wav</ShortName>
+					<Path>sfx\sfx_boss_explode02_d47d75be.wem</Path>
+				</File>
+				<File Id="737250984" Language="SFX">
+					<ShortName>SFX_BRIDGE_MOVING_FINISH.wav</ShortName>
+					<Path>sfx\sfx_bridge_moving_finish_d47d75be.wem</Path>
+				</File>
+				<File Id="569902964" Language="SFX">
+					<ShortName>SFX_BRIDGE_MOVING_LOOP.wav</ShortName>
+					<Path>sfx\sfx_bridge_moving_loop_d47d75bf.wem</Path>
+				</File>
+				<File Id="969071271" Language="SFX">
+					<ShortName>SFX_BUTTON_CLICK.wav</ShortName>
+					<Path>sfx\sfx_button_click_d47d75be.wem</Path>
+				</File>
+				<File Id="200416948" Language="SFX">
+					<ShortName>SFX_ButtonClick2.wav</ShortName>
+					<Path>sfx\sfx_buttonclick2_d47d75be.wem</Path>
+				</File>
+				<File Id="624787760" Language="SFX">
+					<ShortName>SFX_CORK_COLLIDE.wav</ShortName>
+					<Path>sfx\sfx_cork_collide_d47d75be.wem</Path>
+				</File>
+				<File Id="457418990" Language="SFX">
+					<ShortName>SFX_CORK_PIPE.wav</ShortName>
+					<Path>sfx\sfx_cork_pipe_d47d75be.wem</Path>
+				</File>
+				<File Id="412291293" Language="SFX">
+					<ShortName>SFX_CRATE_COLLIDE.wav</ShortName>
+					<Path>sfx\sfx_crate_collide_d47d75be.wem</Path>
+				</File>
+				<File Id="432083768" Language="SFX">
+					<ShortName>SFX_Crusher_HighEnd.wav</ShortName>
+					<Path>sfx\sfx_crusher_highend_d47d75be.wem</Path>
+				</File>
+				<File Id="234886743" Language="SFX">
+					<ShortName>SFX_Crusher_LowEnd.wav</ShortName>
+					<Path>sfx\sfx_crusher_lowend_d47d75be.wem</Path>
+				</File>
+				<File Id="1042153980" Language="SFX">
+					<ShortName>SFX_Crusher_Raise.wav</ShortName>
+					<Path>sfx\sfx_crusher_raise_d47d75be.wem</Path>
+				</File>
+				<File Id="168630055" Language="SFX">
+					<ShortName>SFX_Crusher_Raise_Stop.wav</ShortName>
+					<Path>sfx\sfx_crusher_raise_stop_d47d75be.wem</Path>
+				</File>
+				<File Id="1001923247" Language="SFX">
+					<ShortName>SFX_DoorOpen_Layer1.wav</ShortName>
+					<Path>sfx\sfx_dooropen_layer1_d47d75be.wem</Path>
+				</File>
+				<File Id="260388068" Language="SFX">
+					<ShortName>SFX_DoorOpen_Layer2.wav</ShortName>
+					<Path>sfx\sfx_dooropen_layer2_d47d75be.wem</Path>
+				</File>
+				<File Id="221116078" Language="SFX">
+					<ShortName>SFX_ENEMY_LILGOO_HOP.wav</ShortName>
+					<Path>sfx\sfx_enemy_lilgoo_hop_d47d75be.wem</Path>
+				</File>
+				<File Id="689712028" Language="SFX">
+					<ShortName>SFX_ENEMY_LILGOO_LAND.wav</ShortName>
+					<Path>sfx\sfx_enemy_lilgoo_land_d47d75be.wem</Path>
+				</File>
+				<File Id="425155452" Language="SFX">
+					<ShortName>SFX_ENEMY_LILGOO_SPLASH.wav</ShortName>
+					<Path>sfx\sfx_enemy_lilgoo_splash_d47d75be.wem</Path>
+				</File>
+				<File Id="739778188" Language="SFX">
+					<ShortName>SFX_Goo_Dispensor.wav</ShortName>
+					<Path>sfx\sfx_goo_dispensor_d47d75be.wem</Path>
+				</File>
+				<File Id="471503835" Language="SFX">
+					<ShortName>SFX_GooJump01.wav</ShortName>
+					<Path>sfx\sfx_goojump01_d47d75be.wem</Path>
+				</File>
+				<File Id="890216658" Language="SFX">
+					<ShortName>SFX_GooJump02.wav</ShortName>
+					<Path>sfx\sfx_goojump02_d47d75be.wem</Path>
+				</File>
+				<File Id="533111448" Language="SFX">
+					<ShortName>SFX_GooPit_Splash_Layer2.wav</ShortName>
+					<Path>sfx\sfx_goopit_splash_layer2_d47d75be.wem</Path>
+				</File>
+				<File Id="667895573" Language="SFX">
+					<ShortName>SFX_GooPit_Splash_Layer.wav</ShortName>
+					<Path>sfx\sfx_goopit_splash_layer_d47d75be.wem</Path>
+				</File>
+				<File Id="1068143956" Language="SFX">
+					<ShortName>SFX_HAZARD_BREAKABLE_WALL_CRUMBLE.wav</ShortName>
+					<Path>sfx\sfx_hazard_breakable_wall_crumble_d47d75be.wem</Path>
+				</File>
+				<File Id="250904351" Language="SFX">
+					<ShortName>SFX_HAZARD_CRUSHER_STEAM.wav</ShortName>
+					<Path>sfx\sfx_hazard_crusher_steam_d47d75be.wem</Path>
+				</File>
+				<File Id="952767755" Language="SFX">
+					<ShortName>SFX_HAZARD_GOOPIT_BLOOP_LOOP.wav</ShortName>
+					<Path>sfx\sfx_hazard_goopit_bloop_loop_d47d75bf.wem</Path>
+				</File>
+				<File Id="24612091" Language="SFX">
+					<ShortName>SFX_HAZARD_OUTLET_SPARK_LOOP.wav</ShortName>
+					<Path>sfx\sfx_hazard_outlet_spark_loop_d47d75bf.wem</Path>
+				</File>
+				<File Id="916196669" Language="SFX">
+					<ShortName>SFX_HAZARD_STEAM_PIPE_LOOP.wav</ShortName>
+					<Path>sfx\sfx_hazard_steam_pipe_loop_d47d75bf.wem</Path>
+				</File>
+				<File Id="272219573" Language="SFX">
+					<ShortName>SFX_InfiniteHP.wav</ShortName>
+					<Path>sfx\sfx_infinitehp_d47d75be.wem</Path>
+				</File>
+				<File Id="302408950" Language="SFX">
+					<ShortName>SFX_InfiniteHPSplashNew.wav</ShortName>
+					<Path>sfx\sfx_infinitehpsplashnew_d47d75be.wem</Path>
+				</File>
+				<File Id="129277509" Language="SFX">
+					<ShortName>SFX_JUNKHULK_CHARGE.wav</ShortName>
+					<Path>sfx\sfx_junkhulk_charge_d47d75be.wem</Path>
+				</File>
+				<File Id="164138866" Language="SFX">
+					<ShortName>SFX_JUNKHULK_DEATH.wav</ShortName>
+					<Path>sfx\sfx_junkhulk_death_d47d75be.wem</Path>
+				</File>
+				<File Id="232127773" Language="SFX">
+					<ShortName>SFX_JUNKHULK_PATROL.wav</ShortName>
+					<Path>sfx\sfx_junkhulk_patrol_d47d75be.wem</Path>
+				</File>
+				<File Id="834623554" Language="SFX">
+					<ShortName>SFX_LiLGoo_Death_01.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_death_01_d47d75be.wem</Path>
+				</File>
+				<File Id="395193378" Language="SFX">
+					<ShortName>SFX_LiLGoo_Death_02.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_death_02_d47d75be.wem</Path>
+				</File>
+				<File Id="885903382" Language="SFX">
+					<ShortName>SFX_LiLGoo_Death_03.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_death_03_d47d75be.wem</Path>
+				</File>
+				<File Id="707380530" Language="SFX">
+					<ShortName>SFX_LiLGoo_Death_04.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_death_04_d47d75be.wem</Path>
+				</File>
+				<File Id="940347646" Language="SFX">
+					<ShortName>SFX_LILGOO_DEATH.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_death_d47d75be.wem</Path>
+				</File>
+				<File Id="1042854966" Language="SFX">
+					<ShortName>SFX_LiLGoo_Jump_01.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_jump_01_d47d75be.wem</Path>
+				</File>
+				<File Id="695432305" Language="SFX">
+					<ShortName>SFX_LiLGoo_Jump_02.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_jump_02_d47d75be.wem</Path>
+				</File>
+				<File Id="1070983593" Language="SFX">
+					<ShortName>SFX_LiLGoo_Jump_03.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_jump_03_d47d75be.wem</Path>
+				</File>
+				<File Id="220204642" Language="SFX">
+					<ShortName>SFX_LiLGoo_Jump_04.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_jump_04_d47d75be.wem</Path>
+				</File>
+				<File Id="79159324" Language="SFX">
+					<ShortName>SFX_LiLGoo_SuckedUp_01.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_suckedup_01_d47d75be.wem</Path>
+				</File>
+				<File Id="875731706" Language="SFX">
+					<ShortName>SFX_LiLGoo_SuckedUp_02.wav</ShortName>
+					<Path>sfx\sfx_lilgoo_suckedup_02_d47d75be.wem</Path>
+				</File>
+				<File Id="1021331409" Language="SFX">
+					<ShortName>SFX_Menu_Cancel_Servo.wav</ShortName>
+					<Path>sfx\sfx_menu_cancel_servo_d47d75be.wem</Path>
+				</File>
+				<File Id="111844856" Language="SFX">
+					<ShortName>SFX_MENU_HIGHLIGHT.wav</ShortName>
+					<Path>sfx\sfx_menu_highlight_d47d75be.wem</Path>
+				</File>
+				<File Id="1032400315" Language="SFX">
+					<ShortName>SFX_Menu_Pause_Scope.wav</ShortName>
+					<Path>sfx\sfx_menu_pause_scope_d47d75be.wem</Path>
+				</File>
+				<File Id="952303414" Language="SFX">
+					<ShortName>SFX_Menu_Select_Servo.wav</ShortName>
+					<Path>sfx\sfx_menu_select_servo_d47d75be.wem</Path>
+				</File>
+				<File Id="990858636" Language="SFX">
+					<ShortName>SFX_Menu_Unpause_Scope.wav</ShortName>
+					<Path>sfx\sfx_menu_unpause_scope_d47d75be.wem</Path>
+				</File>
+				<File Id="223758166" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel01.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel01_d47d75be.wem</Path>
+				</File>
+				<File Id="352946637" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel02.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel02_d47d75be.wem</Path>
+				</File>
+				<File Id="869300299" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel03.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel03_d47d75be.wem</Path>
+				</File>
+				<File Id="895379778" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel04.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel04_d47d75be.wem</Path>
+				</File>
+				<File Id="482761830" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel05.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel05_d47d75be.wem</Path>
+				</File>
+				<File Id="202867886" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel06.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel06_d47d75be.wem</Path>
+				</File>
+				<File Id="672314626" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel07.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel07_d47d75be.wem</Path>
+				</File>
+				<File Id="379904358" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel08.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel08_d47d75be.wem</Path>
+				</File>
+				<File Id="186226182" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel09.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel09_d47d75be.wem</Path>
+				</File>
+				<File Id="316749178" Language="SFX">
+					<ShortName>SFX_Player_Footstep_Steel10.wav</ShortName>
+					<Path>sfx\sfx_player_footstep_steel10_d47d75be.wem</Path>
+				</File>
+				<File Id="326297263" Language="SFX">
+					<ShortName>SFX_Player_JumpSteam.wav</ShortName>
+					<Path>sfx\sfx_player_jumpsteam_d47d75be.wem</Path>
+				</File>
+				<File Id="700784484" Language="SFX">
+					<ShortName>SFX_PLAYER_LAND.wav</ShortName>
+					<Path>sfx\sfx_player_land_d47d75be.wem</Path>
+				</File>
+				<File Id="26371829" Language="SFX">
+					<ShortName>SFX_PLAYER_PUSH.wav</ShortName>
+					<Path>sfx\sfx_player_push_d47d75be.wem</Path>
+				</File>
+				<File Id="298606196" Language="SFX">
+					<ShortName>SFX_PLAYER_SPLASH.wav</ShortName>
+					<Path>sfx\sfx_player_splash_d47d75be.wem</Path>
+				</File>
+				<File Id="139614725" Language="SFX">
+					<ShortName>SFX_PLUG_COLLIDE.wav</ShortName>
+					<Path>sfx\sfx_plug_collide_d47d75be.wem</Path>
+				</File>
+				<File Id="527594700" Language="SFX">
+					<ShortName>SFX_PLUG_OUTLET.wav</ShortName>
+					<Path>sfx\sfx_plug_outlet_d47d75be.wem</Path>
+				</File>
+				<File Id="694352795" Language="SFX">
+					<ShortName>SFX_Pudge_Door_Close.wav</ShortName>
+					<Path>sfx\sfx_pudge_door_close_d47d75be.wem</Path>
+				</File>
+				<File Id="32417426" Language="SFX">
+					<ShortName>SFX_Pudge_Door_Open.wav</ShortName>
+					<Path>sfx\sfx_pudge_door_open_d47d75be.wem</Path>
+				</File>
+				<File Id="73736529" Language="SFX">
+					<ShortName>SFX_Pudge_Jump_Gear_01.wav</ShortName>
+					<Path>sfx\sfx_pudge_jump_gear_01_d47d75be.wem</Path>
+				</File>
+				<File Id="385557610" Language="SFX">
+					<ShortName>SFX_Pudge_Jump_Gear_02.wav</ShortName>
+					<Path>sfx\sfx_pudge_jump_gear_02_d47d75be.wem</Path>
+				</File>
+				<File Id="218522004" Language="SFX">
+					<ShortName>SFX_Pudge_Jump_Gear_03.wav</ShortName>
+					<Path>sfx\sfx_pudge_jump_gear_03_d47d75be.wem</Path>
+				</File>
+				<File Id="956501706" Language="SFX">
+					<ShortName>SFX_Pudge_Jump_Steam.wav</ShortName>
+					<Path>sfx\sfx_pudge_jump_steam_d47d75be.wem</Path>
+				</File>
+				<File Id="568686304" Language="SFX">
+					<ShortName>SFX_Pudge_Jump_Whoosh.wav</ShortName>
+					<Path>sfx\sfx_pudge_jump_whoosh_d47d75be.wem</Path>
+				</File>
+				<File Id="954539878" Language="SFX">
+					<ShortName>SFX_Pudge_Wall_Grab.wav</ShortName>
+					<Path>sfx\sfx_pudge_wall_grab_d47d75be.wem</Path>
+				</File>
+				<File Id="606522128" Language="SFX">
+					<ShortName>SFX_Pudge_Wall_Slide_Loop.wav</ShortName>
+					<Path>sfx\sfx_pudge_wall_slide_loop_d47d75bf.wem</Path>
+				</File>
+				<File Id="801152522" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Attack_01.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_attack_01_d47d75be.wem</Path>
+				</File>
+				<File Id="810722817" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Attack_02.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_attack_02_d47d75be.wem</Path>
+				</File>
+				<File Id="925460897" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Attack_03.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_attack_03_d47d75be.wem</Path>
+				</File>
+				<File Id="737892625" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Attack_04.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_attack_04_d47d75be.wem</Path>
+				</File>
+				<File Id="87053452" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Attack_05.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_attack_05_d47d75be.wem</Path>
+				</File>
+				<File Id="847924908" Language="SFX">
+					<ShortName>SFX_SLIMEMONSTER_ATTACK.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_attack_d47d75be.wem</Path>
+				</File>
+				<File Id="466338350" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Death_01.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_death_01_d47d75be.wem</Path>
+				</File>
+				<File Id="124862435" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Death_02.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_death_02_d47d75be.wem</Path>
+				</File>
+				<File Id="392738826" Language="SFX">
+					<ShortName>SFX_SlimeMonster_Death_03.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_death_03_d47d75be.wem</Path>
+				</File>
+				<File Id="99464935" Language="SFX">
+					<ShortName>SFX_SLIMEMONSTER_DEATH.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_death_d47d75be.wem</Path>
+				</File>
+				<File Id="427815711" Language="SFX">
+					<ShortName>SFX_SLIMEMONSTER_HOP.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_hop_d47d75be.wem</Path>
+				</File>
+				<File Id="880086984" Language="SFX">
+					<ShortName>SFX_SLIMEMONSTER_LAND.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_land_d47d75be.wem</Path>
+				</File>
+				<File Id="876379311" Language="SFX">
+					<ShortName>SFX_SLIMEMONSTER_SUPRISE.wav</ShortName>
+					<Path>sfx\sfx_slimemonster_suprise_d47d75be.wem</Path>
+				</File>
+				<File Id="671406296" Language="SFX">
+					<ShortName>SFX_Sprinklers_01.wav</ShortName>
+					<Path>sfx\sfx_sprinklers_01_d47d75bf.wem</Path>
+				</File>
+				<File Id="270517590" Language="SFX">
+					<ShortName>SFX_Sprinklers_02.wav</ShortName>
+					<Path>sfx\sfx_sprinklers_02_d47d75bf.wem</Path>
+				</File>
+				<File Id="1055266722" Language="SFX">
+					<ShortName>SFX_Vacuum_Suck_Loop.wav</ShortName>
+					<Path>sfx\sfx_vacuum_suck_loop_d47d75bf.wem</Path>
+				</File>
+				<File Id="669336873" Language="SFX">
+					<ShortName>SFX_Vacuum_SuckUp_Layer01.wav</ShortName>
+					<Path>sfx\sfx_vacuum_suckup_layer01_d47d75be.wem</Path>
+				</File>
+				<File Id="393751146" Language="SFX">
+					<ShortName>SFX_Vacuum_SuckUp_Layer02.wav</ShortName>
+					<Path>sfx\sfx_vacuum_suckup_layer02_d47d75be.wem</Path>
+				</File>
+				<File Id="970925750" Language="SFX">
+					<ShortName>SFX_WATERPOOL_HEAL_LOOP.wav</ShortName>
+					<Path>sfx\sfx_waterpool_heal_loop_d47d75bf.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

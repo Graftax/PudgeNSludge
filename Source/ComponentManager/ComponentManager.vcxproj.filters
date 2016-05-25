@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{820bc97a-2685-4357-9a4b-6589d90c9109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\AI Components">
+      <UniqueIdentifier>{188c87b0-1851-4cb6-9f89-550e52ec74a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Collision Components">
+      <UniqueIdentifier>{45c6cb4c-0c80-4608-bc32-5597e4258b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\MeshEffect_Components">
+      <UniqueIdentifier>{73241bb0-92cd-4d5a-9102-faacbe2e8fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Collision Components\Spawning Pipes">
+      <UniqueIdentifier>{ee7002ee-ece4-4461-ac8c-ca8eed8c127f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ComponentManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Render.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Input.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Health.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Item.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Animation.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_BreakableWallCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Collision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_CorkCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_CrateCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_GooPitCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_PlayerCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_SteamPipeCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_PlayerArmCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Sound.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_AI.h">
+      <Filter>Components\AI Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Lil_Goo_AI.h">
+      <Filter>Components\AI Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Slime_Monster_AI.h">
+      <Filter>Components\AI Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_LittleGooCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_IntakePipeCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_OutletCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_PlugCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_BridgeCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_SlimeMonsterCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_CrusherCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component_Emitter.h">
+      <Filter>Components\MeshEffect_Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_LandMeshEffect.h">
+      <Filter>Components\MeshEffect_Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Checkpoint.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_WaterPoolCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_DoorCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_SpawnPipeCollision.h">
+      <Filter>Components\Collision Components\Spawning Pipes</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_BasePipe.h">
+      <Filter>Components\Collision Components\Spawning Pipes</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_BoxPipeCollision.h">
+      <Filter>Components\Collision Components\Spawning Pipes</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_ButtonCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_BossCollision.h">
+      <Filter>Components\Collision Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CComponent_Flasher.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ComponentManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Input.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Health.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Item.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Animation.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_BreakableWallCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Collision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_CorkCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_CrateCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_GooPitCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_PlayerCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_PlayerArmCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Sound.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_AI.cpp">
+      <Filter>Components\AI Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Lil_Goo_AI.cpp">
+      <Filter>Components\AI Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Slime_Monster_AI.cpp">
+      <Filter>Components\AI Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_LittleGooCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_IntakePipeCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_OutletCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_PlugCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_BridgeCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_SlimeMonsterCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_CrusherCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component_Emitter.cpp">
+      <Filter>Components\MeshEffect_Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_LandMeshEffect.cpp">
+      <Filter>Components\MeshEffect_Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Checkpoint.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_WaterPoolCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_DoorCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_SpawnPipeCollision.cpp">
+      <Filter>Components\Collision Components\Spawning Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_BasePipe.cpp">
+      <Filter>Components\Collision Components\Spawning Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_BoxPipeCollision.cpp">
+      <Filter>Components\Collision Components\Spawning Pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_ButtonCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_BossCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Flasher.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_SteamPipeCollision.cpp">
+      <Filter>Components\Collision Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CComponent_Render.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

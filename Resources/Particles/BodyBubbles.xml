@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<emitter>
+    <fileTextureName value="Bubbles.png" />
+    <type value="1" />
+    <rate value="50.368408" />
+    <minDistance value="0.000000" />
+    <maxDistance value="20.377979" />
+    <spread value="0.000000" />
+    <speed value="0.321053" />
+    <speedRandom value="0.186842" />
+    <maxCount value="-1" />
+    <lifespan value="1.500000" />
+    <lifespanRandom value="1.000000" />
+    <direction X="1.000000" Y="0.000000" Z="0.000000" />
+    <particleRenderType value="5" />
+    <spriteNum value="1" />
+    <spriteScaleX value="20.000000" />
+    <spriteScaleY value="20.000000" />
+    <spriteTwist value="0.000000" />
+    <alphaRamp value="Suds_OpacityRamp.png" />
+    <colorRamp value="Suds_ColorRamp.png" />
+    <scaleRamp value="default.png" />
+    <rotationRamp value="default.png" />
+    <arrayMapper1 min="0.000000" max="1.000000" />
+    <arrayMapper2 min="0.000000" max="1.000000" />
+    <gravity X="-0.000000" Y="0.000000" Z="-0.000000" />
+</emitter>

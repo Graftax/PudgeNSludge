@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DebugShapes.cpp" />
+    <ClCompile Include="LightSystem\DirectionalLight.cpp" />
+    <ClCompile Include="LightSystem\Light.cpp" />
+    <ClCompile Include="LightSystem\LightManager.cpp" />
+    <ClCompile Include="LightSystem\PointLight.cpp" />
+    <ClCompile Include="LightSystem\SpotLight.cpp" />
+    <ClCompile Include="MeshManager.cpp" />
+    <ClCompile Include="MultiThreadRender.cpp" />
+    <ClCompile Include="PostProcess.cpp" />
+    <ClCompile Include="PostProcessChain.cpp" />
+    <ClCompile Include="RenderEngine.cpp" />
+    <ClCompile Include="RenderEngineDrawFunctions.cpp" />
+    <ClCompile Include="RenderNode.cpp" />
+    <ClCompile Include="RenderSet.cpp" />
+    <ClCompile Include="RenderSetSorted.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DebugShapes.h" />
+    <ClInclude Include="LightSystem\DirectionalLight.h" />
+    <ClInclude Include="LightSystem\Light.h" />
+    <ClInclude Include="LightSystem\LightManager.h" />
+    <ClInclude Include="LightSystem\PointLight.h" />
+    <ClInclude Include="LightSystem\SpotLight.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshManager.h" />
+    <ClInclude Include="MultiThreadRender.h" />
+    <ClInclude Include="PackUtilities.h" />
+    <ClInclude Include="PostProcess.h" />
+    <ClInclude Include="PostProcessChain.h" />
+    <ClInclude Include="RenderEngine.h" />
+    <ClInclude Include="RenderHandle.h" />
+    <ClInclude Include="RenderNode.h" />
+    <ClInclude Include="RenderSet.h" />
+    <ClInclude Include="RenderSetSorted.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="VertexDeclerations.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\Shaders\2DTransform.fx" />
+    <None Include="..\..\Resources\Shaders\AnimatedTexture.fx" />
+    <None Include="..\..\Resources\Shaders\CommonShader.fx" />
+    <None Include="..\..\Resources\Shaders\Cube.fx" />
+    <None Include="..\..\Resources\Shaders\DepthOfField.fx" />
+    <None Include="..\..\Resources\Shaders\DirectionalLight.fx" />
+    <None Include="..\..\Resources\Shaders\DownSample.fx" />
+    <None Include="..\..\Resources\Shaders\DrawEdges.fx" />
+    <None Include="..\..\Resources\Shaders\GBuffer.fx" />
+    <None Include="..\..\Resources\Shaders\Particle.fx" />
+    <None Include="..\..\Resources\Shaders\PointLight.fx" />
+    <None Include="..\..\Resources\Shaders\PPBlur.fx" />
+    <None Include="..\..\Resources\Shaders\PPBlurH.fx" />
+    <None Include="..\..\Resources\Shaders\PPBlurV.fx" />
+    <None Include="..\..\Resources\Shaders\Pyramid.fx" />
+    <None Include="..\..\Resources\Shaders\SpotLight.fx" />
+    <None Include="..\..\Resources\Shaders\StaticObjects.fx" />
+    <None Include="..\..\Resources\Shaders\texture.fx" />
+    <None Include="..\..\Resources\Shaders\UpSample.fx" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C53F202-5AEF-45A4-B440-F02CEE56FDA4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RenderEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

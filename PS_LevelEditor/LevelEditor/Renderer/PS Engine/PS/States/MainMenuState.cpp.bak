@@ -1,0 +1,482 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Class Name: MainMenuState
+// Purpose: This is the Main Menu State
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include "MainMenuState.h"
+#include "..//..//RenderEngine/RenderEngine.h"
+#include "..//..//RenderEngine/TextureManager.h"
+#include "../../ObjectLib/ObjectManager/CObjectManager.h"
+#include "GamePlayState.h"
+#include "../COptionsState.h"
+#include "../../InputLib/InputManager.h"
+#include "../../AudioLib/AudioManager.h"
+
+CMainMenuState* CMainMenuState::m_pInstance = NULL;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: CMainMenuState
+// Purpose: Default Constructor.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:	
+// Last Modification Date:	
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+CMainMenuState::CMainMenuState()
+{
+	m_pGame = NULL;
+	m_pInput = NULL;
+	m_pAudio = NULL;
+	m_nHighlighted = 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: ~CMainMenuState
+// Purpose: Default Destructor.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:	
+// Last Modification Date:	
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+CMainMenuState::~CMainMenuState()
+{
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: GetInstance
+// Purpose: Returns the instance of the Main Menu.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+CMainMenuState* CMainMenuState::GetInstance ()
+{
+	if (!m_pInstance)
+	{
+		m_pInstance = new CMainMenuState;
+	}
+	LOG(LOG_INFO, "CMainMenuState::GetInstance()", "CMainMenuState's instance creation succeeded");
+	return m_pInstance;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: DeleteInstance
+// Purpose: Deletes the instance of the Main Menu.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CMainMenuState::DeleteInstance ()
+{
+	if (m_pInstance)
+	{
+		delete m_pInstance;
+		m_pInstance = NULL;
+	}
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Init
+// Purpose: Initializes the state.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CMainMenuState::Init ()
+{
+	// AddVerts()
+	m_pGame = CGame::GetInstance();
+	m_pInput = m_pGame->GetInputManager();
+	m_pAudio = m_pGame->GetAudioManager();
+	
+	m_pAudio->PlayMusic(MUSIC_TITLE);
+
+	m_nStartTextureHandle = TextureManager::GetInstance()->GetTexture( TextureManager::GetInstance()->LoadTexture( "..//..//Resources/Textures/PS_FE_MainMenu_Start.png" ) );
+	m_nOptionsTextureHandle = TextureManager::GetInstance()->GetTexture( TextureManager::GetInstance()->LoadTexture( "..//..//Resources/Textures/PS_FE_MainMenu_Options.png" ) );
+	m_nCreditsTextureHandle = TextureManager::GetInstance()->GetTexture( TextureManager::GetInstance()->LoadTexture( "..//..//Resources/Textures/PS_FE_MainMenu_Credits.png" ) );
+	m_nExitTextureHandle = TextureManager::GetInstance()->GetTexture( TextureManager::GetInstance()->LoadTexture( "..//..//Resources/Textures/PS_FE_MainMenu_Exit.png" ) );
+	
+	ShowCursor( true );
+	/*
+	VelA = vec2f (1.0f, -1.5f);
+	VelB = vec2f (-1.0f, -1.0f);
+
+	boxA.SetCentorid ( vec2f (0.0f, 0.0f));
+	boxB.SetCentorid ( vec2f (0.0f, 0.0f));
+
+
+	boxA.GetVertices() [0].Set2DCentorid ( vec2f (-1.0f, -1.0f) );
+	boxA.GetVertices() [1].Set2DCentorid ( vec2f (-1.0f,  1.0f) );
+	boxA.GetVertices() [2].Set2DCentorid ( vec2f ( 1.0f,  1.0f) );
+	boxA.GetVertices() [3].Set2DCentorid ( vec2f ( 1.0f, -1.0f) );
+
+	boxB.GetVertices() [0].Set2DCentorid ( vec2f (-1.0f, -1.0f) );
+	boxB.GetVertices() [1].Set2DCentorid ( vec2f (-1.0f,  1.0f) );
+	boxB.GetVertices() [2].Set2DCentorid ( vec2f ( 1.0f,  1.0f) );
+	boxB.GetVertices() [3].Set2DCentorid ( vec2f ( 1.0f, -1.0f) );
+
+	boxA.GetNormals()[0].Set2DCentorid ( vec2f ( 0.0f, -1.0f) );
+	boxA.GetNormals()[1].Set2DCentorid ( vec2f (-1.0f,  0.0f) );
+	boxA.GetNormals()[2].Set2DCentorid ( vec2f ( 0.0f,  1.0f) );
+	boxA.GetNormals()[3].Set2DCentorid ( vec2f ( 1.0f,  0.0f) );
+
+	boxB.GetNormals()[0].Set2DCentorid ( vec2f ( 0.0f, -1.0f) );
+	boxB.GetNormals()[1].Set2DCentorid ( vec2f (-1.0f,  0.0f) );
+	boxB.GetNormals()[2].Set2DCentorid ( vec2f ( 0.0f,  1.0f) );
+	boxB.GetNormals()[3].Set2DCentorid ( vec2f ( 1.0f,  0.0f) );
+
+
+	boxA.GetTransform().m_v2Position = vec2f (-40.0f, 0.0f);
+	boxB.GetTransform().m_v2Position = vec2f (-50.0f, 0.0f);
+	boxA.GetSweep ().m_v2Center = boxA.GetTransform().m_v2Position;
+	boxB.GetSweep ().m_v2Center = boxB.GetTransform().m_v2Position;
+
+	boxA.GetSweep().m_fAngle = 0.785398163f;
+	boxB.GetSweep().m_fAngle = 1.04719755f;
+	boxA.GetTransform ().m_fCosine = (float)cos(boxA.GetSweep().m_fAngle);
+	boxB.GetTransform ().m_fCosine = (float)cos(boxB.GetSweep().m_fAngle);
+
+	boxA.GetTransform ().m_fSine = (float)sin(boxA.GetSweep().m_fAngle);
+	boxB.GetTransform ().m_fSine = (float)sin(boxB.GetSweep().m_fAngle);
+
+	#if _DEBUG
+	DebugShapes::CreateSphere (0.1f, 50, 50);
+	#endif	
+	*/
+
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Shutdown
+// Purpose: Shuts down the state.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CMainMenuState::Shutdown ()
+{
+	if(m_pGame)
+	{
+		m_pGame = NULL;
+	}
+
+	if(m_pInput)
+	{
+		m_pInput = NULL;
+	}
+
+	DeleteInstance();
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Input
+// Purpose: Gets input to update the state.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+bool CMainMenuState::Input ()
+{
+	if(!m_pInput)
+	{
+		return false;
+	}
+
+	if(m_pInput->CheckBufferedKeyEx(DIK_ESCAPE))
+	{
+		return false;
+	}
+
+	//Keyboard Input
+	if(m_pInput->CheckBufferedKeyEx(DIK_UP) || m_pInput->CheckBufferedKeyEx(DIK_W) )
+	{
+		//move cursor up
+		--m_nHighlighted;
+
+		if(m_nHighlighted < 0)
+		{
+			m_nHighlighted = NUM_ITEMS - 1;
+		}
+	}
+
+	if(m_pInput->CheckBufferedKeyEx(DIK_DOWN) || m_pInput->CheckBufferedKeyEx(DIK_S))
+	{
+		//move cusor down
+		++m_nHighlighted;
+
+		if(m_nHighlighted >= NUM_ITEMS)
+		{
+			m_nHighlighted = STARTGAME;
+		}
+	}
+
+	if(m_pInput->CheckBufferedKeyEx(DIK_RETURN) || 
+		m_pInput->CheckBufferedKeyEx(DIK_SPACE))
+	{
+		m_pAudio->StopMusic(MUSIC_TITLE);
+		//enter into the next menu item
+		switch(m_nHighlighted)
+		{
+		case STARTGAME:
+			{
+				//change state to gameplay state
+				CGame::GetInstance()->ChangeState( CGamePlayState::GetInstance() );
+				break;
+			}
+		case OPTIONS:
+			{
+				//change state to the options state
+				CGame::GetInstance()->PushState(COptionsState::GetInstance());
+				break;
+			}
+		case CREDITS:
+			{
+				//change state to the credits state
+				/*UNCOMMENT THIS IN WHEN CREDITSSTATE IS ADDED*/
+				//CGame::GetInstance()->PushState(CCreditsState::GetInstance());
+				break;
+			}
+		case EXIT:
+			{
+				//exit the game
+				return false;
+				break;
+			}
+		default:
+			{
+				break;
+			}
+		}
+	}
+
+	//Mouse Input
+	POINT ptCursor;
+	GetCursorPos(&ptCursor);
+	ScreenToClient(CGame::GetInstance()->GetHWND(), &ptCursor);
+	
+	return true;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Update
+// Purpose: Updates the state.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CMainMenuState::Update (float fElapsedTime)
+{
+	/*static bool CollisionHappened = false;
+	static float angle = 0.0f;
+
+	if (CollisionHappened)
+	{
+		if (GetAsyncKeyState ('B'))
+		{
+			CollisionHappened = false;
+		}
+	}
+	D3DXMATRIX mat;
+
+	D3DXMatrixIdentity (&mat);	
+
+	mat._41 = boxA.GetTransform().m_v2Position.x;
+	mat._42 = boxA.GetTransform().m_v2Position.y;
+	mat._43 = 0.0f;
+	DebugShapes::RenderSphere (mat);
+
+	mat._41 = boxB.GetTransform().m_v2Position.x;
+	mat._42 = boxB.GetTransform().m_v2Position.y;
+	DebugShapes::RenderSphere (mat);
+
+	if (!CollisionHappened)
+	{
+		vec2f position;
+		position = boxA.Rotate (boxA.GetTransform().m_fSine, boxA.GetTransform().m_fCosine, boxA.GetVertices() [0].Get2DCentorid () + boxA.GetTransform().m_v2Position, boxA.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+		position = boxA.Rotate (boxA.GetTransform().m_fSine, boxA.GetTransform().m_fCosine, boxA.GetVertices() [1].Get2DCentorid () + boxA.GetTransform().m_v2Position, boxA.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+		position = boxA.Rotate (boxA.GetTransform().m_fSine, boxA.GetTransform().m_fCosine, boxA.GetVertices() [2].Get2DCentorid () + boxA.GetTransform().m_v2Position, boxA.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+		position = boxA.Rotate (boxA.GetTransform().m_fSine, boxA.GetTransform().m_fCosine, boxA.GetVertices() [3].Get2DCentorid () + boxA.GetTransform().m_v2Position, boxA.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+
+		position = boxB.Rotate (boxB.GetTransform().m_fSine, boxB.GetTransform().m_fCosine, boxB.GetVertices() [0].Get2DCentorid () + boxB.GetTransform().m_v2Position, boxB.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+		position = boxB.Rotate (boxB.GetTransform().m_fSine, boxB.GetTransform().m_fCosine, boxB.GetVertices() [1].Get2DCentorid () + boxB.GetTransform().m_v2Position, boxB.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+		position = boxB.Rotate (boxB.GetTransform().m_fSine, boxB.GetTransform().m_fCosine, boxB.GetVertices() [2].Get2DCentorid () + boxB.GetTransform().m_v2Position, boxB.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+		position = boxB.Rotate (boxB.GetTransform().m_fSine, boxB.GetTransform().m_fCosine, boxB.GetVertices() [3].Get2DCentorid () + boxB.GetTransform().m_v2Position, boxB.GetTransform().m_v2Position);
+		mat._41 = position.x;
+		mat._42 = position.y;
+		DebugShapes::RenderSphere (mat);
+	}
+	if (!CollisionHappened)
+	{	
+		boxA.GetTransform().m_v2Position += VelA * fElapsedTime;
+		boxB.GetTransform().m_v2Position += VelB * fElapsedTime;
+		angle += 0.4f * fElapsedTime;
+		boxB.GetSweep().m_fAngle = angle;
+		boxB.GetTransform ().m_fCosine = (float)cos(boxB.GetSweep().m_fAngle);
+		boxB.GetTransform ().m_fSine = (float)sin(boxB.GetSweep().m_fAngle);
+	}
+		Logger::ClearConsole ();
+		LOG (LOG_INFO, "CMainMenuState::Update", "BoxA.X: %f  BoxA.Y: %f" , boxA.GetTransform().m_v2Position.x, boxA.GetTransform().m_v2Position.y);
+		LOG (LOG_INFO, "CMainMenuState::Update", "VelA.X: %f  VelA.Y: %f" , VelA.x, VelA.y);
+		LOG (LOG_INFO, "CMainMenuState::Update", "");
+		LOG (LOG_INFO, "CMainMenuState::Update", "BoxB.X: %f  BoxB.Y: %f" , boxB.GetTransform().m_v2Position.x, boxB.GetTransform().m_v2Position.y);
+		LOG (LOG_INFO, "CMainMenuState::Update", "VelB.X: %f  VelB.Y: %f" , VelB.x, VelB.y);
+		LOG (LOG_INFO, "CMainMenuState::Update", "" );
+	
+		if (boxA.GetTransform().m_v2Position.x < -50.0f)
+		{
+			VelA.x = -VelA.x;
+		}
+		if (boxA.GetTransform().m_v2Position.x > -40.0f)
+		{
+			VelA.x = -VelA.x;
+		}
+		if (boxA.GetTransform().m_v2Position.y < -5.0f)
+		{
+			VelA.y = -VelA.y;
+		}
+		if (boxA.GetTransform().m_v2Position.y > 5.0f)
+		{
+			VelA.y = -VelA.y;
+		}
+	
+		if (boxB.GetTransform().m_v2Position.x < -50.0f)
+		{	   
+			   VelB.x = -VelB.x;
+		}	   
+		if (boxB.GetTransform().m_v2Position.x > -40.0f)
+		{	   
+			   VelB.x = -VelB.x;
+		}	   
+		if (boxB.GetTransform().m_v2Position.y < -5.0f)
+		{	   
+			   VelB.y = -VelB.y;
+		}	   
+		if (boxB.GetTransform().m_v2Position.y > 5.0f)
+		{
+			VelB.y = -VelB.y;
+		}
+	
+		vec2f newPositions[2];
+		vec2f ContactPoints[2];
+		unsigned int numPoints = 0;
+	
+		if (boxA.BoxToBoxVersion2 (&boxB, ContactPoints, numPoints) || boxB.BoxToBoxVersion2 (&boxA, ContactPoints, numPoints))
+		{
+			if (!CollisionHappened)
+			{
+				VelA.x = -VelA.x;
+				VelA.y = -VelA.y;
+				VelB.x = -VelB.x;
+				VelB.y = -VelB.y;
+			}
+
+			CollisionHappened = true;
+			
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "BoxA and BoxB are touching");
+			LOG (LOG_INFO, "CMainMenuState::Update", "" );
+			LOG (LOG_INFO, "CMainMenuState::Update", "" );
+			LOG (LOG_INFO, "CMainMenuState::Update", "" );
+			LOG (LOG_INFO, "CMainMenuState::Update", "Contact1.X: %f  Contact1.Y: %f" , ContactPoints[0].x, ContactPoints[0].y);
+			LOG (LOG_INFO, "CMainMenuState::Update", "");
+			LOG (LOG_INFO, "CMainMenuState::Update", "Contact2.X: %f  Contact2.Y: %f" , ContactPoints[1].x, ContactPoints[1].y);
+	
+			mat._41 = ContactPoints[0].x;
+			mat._42 = ContactPoints[0].y;
+			DebugShapes::RenderSphere (mat);
+
+			
+			mat._41 = ContactPoints[1].x;
+			mat._42 = ContactPoints[1].y;
+			DebugShapes::RenderSphere (mat);
+
+			if (newPositions)
+			{
+				//boxA.trans.position = newPositions[0];
+				//boxB.trans.position = newPositions[1];
+			}
+		}*/
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// Function Name: Render
+// Purpose: Render the state.
+// Original Author: Rueben Massey
+// Creation Date: 5/14/2012
+// Last Modification By:
+// Last Modification Date:
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+void CMainMenuState::Render ()
+{
+	// How do I Render my stuff?
+	switch( m_nHighlighted )
+	{
+	case STARTGAME:
+		{
+			RenderEngine::RasterTexture( m_nStartTextureHandle, 0.0f, 0.0f, 1.0f, 1.0f );
+		}
+		break;
+
+	case OPTIONS:
+		{
+			RenderEngine::RasterTexture( m_nOptionsTextureHandle, 0.0f, 0.0f, 1.0f, 1.0f );
+		}
+		break;
+
+	case CREDITS:
+		{
+			RenderEngine::RasterTexture( m_nCreditsTextureHandle, 0.0f, 0.0f, 1.0f, 1.0f );
+		}
+		break;
+
+	case EXIT:
+		{
+			RenderEngine::RasterTexture( m_nExitTextureHandle, 0.0f, 0.0f, 1.0f, 1.0f );
+		}
+		break;
+
+	default:
+		break;
+	}
+
+}

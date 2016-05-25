@@ -1,0 +1,105 @@
+#ifndef CCOMPONENT_WATER_POOL_COLLISION_H
+#define CCOMPONENT_WATER_POOL_COLLISION_H
+
+#include "CComponent_Collision.h"
+
+class CComponent_Sound;
+class CPM_ParEmitter;
+class CComponent_Health;
+
+class CComponent_WaterPoolCollision : public CComponent_Collision
+{
+private:
+	std::vector<IBaseObject*> m_vAssociatedObjs;
+	float m_fHealAmount;
+	float m_fAmountHealed;
+	bool m_bPlayerHeal;
+	bool m_bPlayLoop;
+	bool m_bTransitioned;
+	CComponent_Sound* m_pSoundCmp;
+	CComponent_Health* m_pPlayerHealth;
+	RenderNode* m_pOwner;
+
+	CPM_ParEmitter* m_pSparkleEmitter;
+
+	string m_szMeshNodeName;
+
+	void StaticCollision ( IBaseObject* Collider, IBaseObject* Collide );
+	void DynamicCollision ( IBaseObject* Collider, IBaseObject* Collide );
+	void PushOut ( CComponent_Collision* _pObjectCollision, vec2f Direction );
+
+public:
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// CComponent_SlimeMonsterCollision():	Default constructor
+	//
+	// Returns:		Void
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	CComponent_WaterPoolCollision();
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// CComponent_SlimeMonsterCollision():	Default Destructor
+	//
+	// Returns:		Void
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	~CComponent_WaterPoolCollision(void);
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Initialize():	intis the little goo collision informtion
+	//
+	// Returns:		bool
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	bool Initialize();
+
+	/////////////////////////////
+	//  Accessors
+	/////////////////////////////
+	float GetHealAmount () { return m_fHealAmount; }
+
+	/////////////////////////////
+	//  Mutators
+	/////////////////////////////
+	void SetHealAmount ( float _fHealAmount ) { m_fHealAmount = _fHealAmount; }
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Update():	Updates the collison component, incrementing its physics and detecting collision with other objects.
+	//
+	// Returns:		Void
+	//
+	// Mod. Name:   Josh Fields
+	// Mod. Date:   5/16/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	void Update( float fDT );
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Shutdown():	shutdowns the little goo collision information
+	//
+	// Returns:		Void
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	void Shutdown(void);
+
+	/////////////////////////////
+	//  Accessors
+	/////////////////////////////
+	std::string GetMeshNodeName () { return m_szMeshNodeName; }
+	/////////////////////////////
+	//  Mutators
+	/////////////////////////////
+	void AddAssociatedObj ( IBaseObject* _pObject ) { m_vAssociatedObjs.push_back (_pObject); }
+	void SetPlayerHealed ( bool _bHealed ) { m_bPlayerHeal = _bHealed; }
+	void SetAmountHealed ( float _fAmount ) { m_fAmountHealed = _fAmount; }
+	void SetMeshName( string _mesh );
+
+};
+#endif

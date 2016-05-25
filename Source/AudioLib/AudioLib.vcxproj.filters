@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AkIncludes">
+      <UniqueIdentifier>{c8b40d98-bead-4e45-8af5-fdc90be8f083}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="AKIncludes\Win32\AkDefaultIOHookBlocking.cpp">
+      <Filter>AkIncludes</Filter>
+    </ClCompile>
+    <ClCompile Include="AKIncludes\Win32\AkDefaultIOHookDeferred.cpp">
+      <Filter>AkIncludes</Filter>
+    </ClCompile>
+    <ClCompile Include="AKIncludes\Common\AkDefaultLowLevelIODispatcher.cpp">
+      <Filter>AkIncludes</Filter>
+    </ClCompile>
+    <ClCompile Include="AKIncludes\Common\AkFileLocationBase.cpp">
+      <Filter>AkIncludes</Filter>
+    </ClCompile>
+    <ClCompile Include="AKIncludes\Common\AkFilePackage.cpp">
+      <Filter>AkIncludes</Filter>
+    </ClCompile>
+    <ClCompile Include="AKIncludes\Common\AkFilePackageLUT.cpp">
+      <Filter>AkIncludes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="AKIncludes\Win32\AkDefaultIOHookBlocking.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Win32\AkDefaultIOHookDeferred.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Win32\AkFileHelpers.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Win32\AkFilePackageLowLevelIOBlocking.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Win32\AkFilePackageLowLevelIODeferred.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Common\AkDefaultLowLevelIODispatcher.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Common\AkFileLocationBase.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Common\AkFilePackage.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Common\AkFilePackageLowLevelIO.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+    <ClInclude Include="AKIncludes\Common\AkFilePackageLUT.h">
+      <Filter>AkIncludes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AKIncludes\Common\AkFilePackageLowLevelIO.inl">
+      <Filter>AkIncludes</Filter>
+    </None>
+  </ItemGroup>
+</Project>

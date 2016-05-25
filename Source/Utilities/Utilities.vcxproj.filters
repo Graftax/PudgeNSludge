@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="PhysicsLib">
+      <UniqueIdentifier>{99a03271-88c3-4871-875e-a81e09482fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Multi Threading Lib">
+      <UniqueIdentifier>{56d5564d-7b86-489e-b477-1faf9cda87b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CollisionLib">
+      <UniqueIdentifier>{3c0de467-9c61-456c-a942-f53a473e02ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MathLib">
+      <UniqueIdentifier>{1ba72046-5f70-42de-99ec-983348e30ed4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KdTree">
+      <UniqueIdentifier>{c43c6ccd-43f6-4f6e-b5bd-2768cf572216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Font Manager">
+      <UniqueIdentifier>{c6be9d79-0597-492d-a4d0-8a68f33a9f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{043da847-d5f7-4ddd-9941-29b4448d5c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventSystem">
+      <UniqueIdentifier>{b23ca3c2-e8b3-4d3c-8504-817535dee703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{950b22d7-c8da-4ead-9b41-273fff01b648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{6c4d3bd6-ac1c-47c0-88c7-f82a9e278207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frame">
+      <UniqueIdentifier>{5a9d5c09-ed5a-4d3c-b212-cb97112c2eff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utilit.h" />
+    <ClInclude Include="CollisionLib\CollisionLib.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionShapes.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\matrix3.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\matrix4.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\vec3.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\vec4.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="KdTree\KdTree.h">
+      <Filter>KdTree</Filter>
+    </ClInclude>
+    <ClInclude Include="KdTree\KdTreeNodes.h">
+      <Filter>KdTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\Lock.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer\UTimer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionAABB.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionBox.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionCapsule.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionCircle.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionCube.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionFrustum.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionLine.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionPlane.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionPoint.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionPolygone.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionRay.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionSphere.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLib\CollisionVolume.h">
+      <Filter>CollisionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame\Frame.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame\Node.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Interpolate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utilit.cpp" />
+    <ClCompile Include="KdTree\KdTree.cpp">
+      <Filter>KdTree</Filter>
+    </ClCompile>
+    <ClCompile Include="KdTree\KdTreeNodes.cpp">
+      <Filter>KdTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\Lock.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer\UTimer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionAABB.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionBox.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionCapsule.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionCircle.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionCube.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionFrustum.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionLine.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionPlane.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionPoint.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionPolygone.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionRay.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionSphere.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLib\CollisionLib.cpp">
+      <Filter>CollisionLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interpolate.cpp" />
+  </ItemGroup>
+</Project>

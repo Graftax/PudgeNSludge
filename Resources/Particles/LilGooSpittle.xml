@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<emitter>
+    <fileTextureName value="GooDripping.png" />
+    <type value="0" />
+    <rate value="25.000000" />
+    <minDistance value="0.000000" />
+    <maxDistance value="102.290878" />
+    <spread value="0.605263" />
+    <speed value="300.447372" />
+    <speedRandom value="0.000000" />
+    <maxCount value="-1" />
+    <lifespan value="1.000000" />
+    <lifespanRandom value="0.000000" />
+    <direction X="0.270526" Y="1.000000" Z="0.000000" />
+    <particleRenderType value="5" />
+    <spriteNum value="1" />
+    <spriteScaleX value="8.000000" />
+    <spriteScaleY value="8.000000" />
+    <spriteTwist value="0.000000" />
+    <alphaRamp value="default.png" />
+    <colorRamp value="LilGooSpittle_ColorRamp.png" />
+    <scaleRamp value="LilGooSpittle_ScaleRamp.png" />
+    <rotationRamp value="default.png" />
+    <arrayMapper3 min="0.000000" max="1.000000" />
+    <ScaleX min="0.000000" max="8.000000" />
+    <arrayMapper5 min="0.000000" max="8.000000" />
+    <gravity X="0.000000" Y="-30.000000" Z="0.000000" />
+</emitter>

@@ -1,0 +1,103 @@
+//////////////////////////////////////////////////////////////////////////////////////
+// Filename:	CComponent_LittleGooCollision.h
+// Author:		Josh Fields
+// Date:		5/24/12
+// Purpose:		This class holds the information for little goo collision
+//////////////////////////////////////////////////////////////////////////////////////
+#ifndef CCOMPONENT_LITTLEGOOCOLLISION_H
+#define CCOMPONENT_LITTLEGOOCOLLISION_H
+
+#include "CComponent_Collision.h"
+
+class CComponent_Animation;
+class CComponent_Sound;
+class CComponent_Lil_Goo_AI;
+
+class CComponent_LittleGooCollision : public CComponent_Collision
+{
+private:
+	IBaseObject* m_pSpawnObject;
+	float m_fSpawnIngore;
+	float m_fSpawnIngoreTimer;
+	bool m_bPulled;
+
+	CComponent_Lil_Goo_AI* m_aiGoo;
+	// If the goo will die on contact or not.
+	bool m_bVolitile;
+	bool m_bDead;
+	CComponent_Animation* m_pAnimComp;
+	CComponent_Sound* m_pSoundCmp;
+
+	void StaticCollision ( IBaseObject* Collider, IBaseObject* Collide );
+	void DynamicCollision ( IBaseObject* Collider, IBaseObject* Collide );
+	void PushOut ( CComponent_Collision* _pObjectCollision, vec2f Direction );
+	
+public:
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// CComponent_LittleGooCollision():	Default constructor
+	//
+	// Returns:		Void
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	CComponent_LittleGooCollision();
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// CComponent_LittleGooCollision():	Default Destructor
+	//
+	// Returns:		Void
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	~CComponent_LittleGooCollision(void);
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Initialize():	intis the little goo collision informtion
+	//
+	// Returns:		bool
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	bool Initialize();
+
+	/////////////////////////////
+	//  Accessors
+	/////////////////////////////
+	bool& GetVolitile() { return m_bVolitile; }
+	float GetSpawnIngore () { return m_fSpawnIngore; }
+	IBaseObject* GetSpawnObject () { return m_pSpawnObject; }
+	bool GetPulled () { return m_bPulled; }
+
+	/////////////////////////////
+	//  Mutators
+	/////////////////////////////
+	void SetSpawnIngore ( float _fIngore ) { m_fSpawnIngore = _fIngore; }
+	void SetSpawnObject ( IBaseObject* _pSpawnObject ) { m_pSpawnObject = _pSpawnObject; }
+	void SetPulled ( bool _bPulled ) { m_bPulled = _bPulled; }
+	void SetDead ( bool _bDead ) { m_bDead = _bDead; }
+
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Update():	Updates the collison component, incrementing its physics and detecting collision with other objects.
+	//
+	// Returns:		Void
+	//
+	// Mod. Name:   Josh Fields
+	// Mod. Date:   5/16/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	void Update( float fDT );
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Shutdown():	shutdowns the little goo collision information
+	//
+	// Returns:		Void
+	//
+	// Mod. Name: JF
+	// Mod. Date: 6/2/12
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	void Shutdown(void);
+};
+#endif

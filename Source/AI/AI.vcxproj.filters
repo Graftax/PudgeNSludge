@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="EnemyAI">
+      <UniqueIdentifier>{1bfdd083-0009-461c-9dc7-d0c5dd8afff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EnemyAI\BossStates">
+      <UniqueIdentifier>{8e229456-d62b-48ff-8c62-0370ce86c848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EnemyAI\Little Goo States">
+      <UniqueIdentifier>{94478742-6fc4-44c9-918d-a25f43d0a304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EnemyAI\Slime Monster States">
+      <UniqueIdentifier>{89ee5832-c1db-4416-821d-d12ea0c2f85a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CBossIdleAI.h">
+      <Filter>EnemyAI\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseAI.h">
+      <Filter>EnemyAI</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossAttackAI.h">
+      <Filter>EnemyAI\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="CLilGooIdleAI.h">
+      <Filter>EnemyAI\Little Goo States</Filter>
+    </ClInclude>
+    <ClInclude Include="CLilGooMoveAI.h">
+      <Filter>EnemyAI\Little Goo States</Filter>
+    </ClInclude>
+    <ClInclude Include="AIStatesInclude.h">
+      <Filter>EnemyAI</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossMoveAI.h">
+      <Filter>EnemyAI\BossStates</Filter>
+    </ClInclude>
+    <ClInclude Include="CSlimeMonsterDeadAI.h">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClInclude>
+    <ClInclude Include="CSlimeMonsterIdleAI.h">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClInclude>
+    <ClInclude Include="CSlimeMonsterAttackAI.h">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClInclude>
+    <ClInclude Include="CSlimeMonsterHideAI.h">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClInclude>
+    <ClInclude Include="CLilGooDeadAI.h">
+      <Filter>EnemyAI\Little Goo States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IBaseAI.cpp">
+      <Filter>EnemyAI</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossAttackAI.cpp">
+      <Filter>EnemyAI\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossIdleAI.cpp">
+      <Filter>EnemyAI\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="CLilGooIdleAI.cpp">
+      <Filter>EnemyAI\Little Goo States</Filter>
+    </ClCompile>
+    <ClCompile Include="CLilGooMoveAI.cpp">
+      <Filter>EnemyAI\Little Goo States</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossMoveAI.cpp">
+      <Filter>EnemyAI\BossStates</Filter>
+    </ClCompile>
+    <ClCompile Include="CSlimeMonsterAttackAI.cpp">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClCompile>
+    <ClCompile Include="CSlimeMonsterDeadAI.cpp">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClCompile>
+    <ClCompile Include="CSlimeMonsterHideAI.cpp">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClCompile>
+    <ClCompile Include="CSlimeMonsterIdleAI.cpp">
+      <Filter>EnemyAI\Slime Monster States</Filter>
+    </ClCompile>
+    <ClCompile Include="CLilGooDeadAI.cpp">
+      <Filter>EnemyAI\Little Goo States</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
